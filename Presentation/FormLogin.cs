@@ -12,7 +12,7 @@ using Domain;
 using Common1.Cache;
 
 namespace Presentation
-{
+{//test
     public partial class FormLogin : Form
     {
         public FormLogin()
