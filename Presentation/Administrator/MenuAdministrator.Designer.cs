@@ -39,6 +39,8 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel2admin = new System.Windows.Forms.Panel();
+            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.paneladmin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -55,6 +57,7 @@
             this.paneladmin.Controls.Add(this.lblname);
             this.paneladmin.Controls.Add(this.pictureBox4);
             this.paneladmin.Controls.Add(this.btn);
+            this.paneladmin.Controls.Add(this.shapeContainer1);
             this.paneladmin.Dock = System.Windows.Forms.DockStyle.Left;
             this.paneladmin.Location = new System.Drawing.Point(0, 0);
             this.paneladmin.Name = "paneladmin";
@@ -106,7 +109,7 @@
             // 
             this.btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn.ForeColor = System.Drawing.Color.Transparent;
-            this.btn.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn.Location = new System.Drawing.Point(3, 399);
             this.btn.Name = "btn";
             this.btn.Size = new System.Drawing.Size(236, 48);
@@ -158,6 +161,26 @@
             this.panel2admin.Size = new System.Drawing.Size(611, 36);
             this.panel2admin.TabIndex = 2;
             // 
+            // shapeContainer1
+            // 
+            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
+            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
+            this.shapeContainer1.Name = "shapeContainer1";
+            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.lineShape1});
+            this.shapeContainer1.Size = new System.Drawing.Size(242, 461);
+            this.shapeContainer1.TabIndex = 5;
+            this.shapeContainer1.TabStop = false;
+            // 
+            // lineShape1
+            // 
+            this.lineShape1.BorderColor = System.Drawing.SystemColors.Control;
+            this.lineShape1.Name = "lineShape1";
+            this.lineShape1.X1 = 5;
+            this.lineShape1.X2 = 229;
+            this.lineShape1.Y1 = 88;
+            this.lineShape1.Y2 = 88;
+            // 
             // MenuAdministrator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -193,5 +216,7 @@
         private System.Windows.Forms.Label lblname;
         private System.Windows.Forms.Label lblposition;
         private System.Windows.Forms.Label lblEmail;
+        private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
+        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
     }
 }
