@@ -67,7 +67,7 @@ namespace Presentation
         private void btncerrar_Click(object sender, EventArgs e)
         {
 
-            if(MessageBox.Show("¿Estas segur@ que desea cerrar la apliación?", "Advertencia",
+            if(MessageBox.Show("¿Estas segur@ que desea cerrar la aplicación?", "Advertencia",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
 
 
