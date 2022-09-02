@@ -163,11 +163,11 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.circularProgressBar1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "WelcomeForm";
+            this.Name = "Bienvenida1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "WelcomeForm";
-            this.Load += new System.EventHandler(this.WelcomeForm_Load);
-            this.Paint += new System.Windows.Forms.PaintEventHandler(this.WelcomeForm_Paint);
+            this.Text = "Bienvenida1";
+            this.Load += new System.EventHandler(this.Bienvenida1_Load);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Bienvenida1_Paint);
             this.Controls.SetChildIndex(this.circularProgressBar1, 0);
             this.Controls.SetChildIndex(this.pictureBox1, 0);
             this.Controls.SetChildIndex(this.lblUsername, 0);
