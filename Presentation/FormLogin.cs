@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using Domain;
 using Common1.Cache;
+using WelcomeForm;
 
 namespace Presentation
 {//test
@@ -107,13 +108,14 @@ namespace Presentation
                         if (UserLoginCache.position==Positions.Administrator)
                         {
 
-                        
-                        Administrator.MenuAdministrator mainMenu = new Administrator.MenuAdministrator();
-                        MessageBox.Show("Bienvenid@ "+UserLoginCache.firstName+ " "+ UserLoginCache.lastName);
-                        mainMenu.Show();
-                            mainMenu.FormClosed += Logout;
-                        this.Hide();
-                    }
+                            
+                            
+                            Administrator.MenuAdministrator mainMenu = new Administrator.MenuAdministrator();
+                            MessageBox.Show("Bienvenid@ " + UserLoginCache.firstName + " " + UserLoginCache.lastName);
+                            mainMenu.Show();
+                            this.Hide();
+
+                        }
                         if (UserLoginCache.position == Positions.Professional)
                         {
 

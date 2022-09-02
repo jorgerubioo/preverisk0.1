@@ -30,15 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuAdministrator));
             this.paneladmin = new System.Windows.Forms.Panel();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.lblposition = new System.Windows.Forms.Label();
+            this.lblname = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.btn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel2admin = new System.Windows.Forms.Panel();
-            this.lblname = new System.Windows.Forms.Label();
-            this.lblposition = new System.Windows.Forms.Label();
-            this.lblEmail = new System.Windows.Forms.Label();
             this.paneladmin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -61,6 +61,36 @@
             this.paneladmin.Size = new System.Drawing.Size(242, 461);
             this.paneladmin.TabIndex = 0;
             this.paneladmin.Paint += new System.Windows.Forms.PaintEventHandler(this.paneladmin_Paint);
+            // 
+            // lblEmail
+            // 
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.ForeColor = System.Drawing.Color.White;
+            this.lblEmail.Location = new System.Drawing.Point(88, 62);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(44, 16);
+            this.lblEmail.TabIndex = 4;
+            this.lblEmail.Text = "Email:";
+            // 
+            // lblposition
+            // 
+            this.lblposition.AutoSize = true;
+            this.lblposition.ForeColor = System.Drawing.Color.White;
+            this.lblposition.Location = new System.Drawing.Point(88, 42);
+            this.lblposition.Name = "lblposition";
+            this.lblposition.Size = new System.Drawing.Size(31, 16);
+            this.lblposition.TabIndex = 3;
+            this.lblposition.Text = "Rol:";
+            // 
+            // lblname
+            // 
+            this.lblname.AutoSize = true;
+            this.lblname.ForeColor = System.Drawing.Color.White;
+            this.lblname.Location = new System.Drawing.Point(88, 20);
+            this.lblname.Name = "lblname";
+            this.lblname.Size = new System.Drawing.Size(59, 16);
+            this.lblname.TabIndex = 2;
+            this.lblname.Text = "Nombre:";
             // 
             // pictureBox4
             // 
@@ -127,36 +157,6 @@
             this.panel2admin.Name = "panel2admin";
             this.panel2admin.Size = new System.Drawing.Size(611, 36);
             this.panel2admin.TabIndex = 2;
-            // 
-            // lblname
-            // 
-            this.lblname.AutoSize = true;
-            this.lblname.ForeColor = System.Drawing.Color.White;
-            this.lblname.Location = new System.Drawing.Point(88, 20);
-            this.lblname.Name = "lblname";
-            this.lblname.Size = new System.Drawing.Size(59, 16);
-            this.lblname.TabIndex = 2;
-            this.lblname.Text = "Nombre:";
-            // 
-            // lblposition
-            // 
-            this.lblposition.AutoSize = true;
-            this.lblposition.ForeColor = System.Drawing.Color.White;
-            this.lblposition.Location = new System.Drawing.Point(88, 42);
-            this.lblposition.Name = "lblposition";
-            this.lblposition.Size = new System.Drawing.Size(31, 16);
-            this.lblposition.TabIndex = 3;
-            this.lblposition.Text = "Rol:";
-            // 
-            // lblEmail
-            // 
-            this.lblEmail.AutoSize = true;
-            this.lblEmail.ForeColor = System.Drawing.Color.White;
-            this.lblEmail.Location = new System.Drawing.Point(88, 62);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(44, 16);
-            this.lblEmail.TabIndex = 4;
-            this.lblEmail.Text = "Email:";
             // 
             // MenuAdministrator
             // 
