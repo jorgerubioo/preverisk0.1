@@ -16,7 +16,7 @@ namespace Presentation.Administrator
         public MenuAdministrator()
         {
             InitializeComponent();
-            //test
+            //testkoke
 
         }
         //arrastrar formulario
