@@ -35,12 +35,12 @@
             this.lblname = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.btn = new System.Windows.Forms.Button();
+            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel2admin = new System.Windows.Forms.Panel();
-            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.paneladmin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -61,7 +61,7 @@
             this.paneladmin.Dock = System.Windows.Forms.DockStyle.Left;
             this.paneladmin.Location = new System.Drawing.Point(0, 0);
             this.paneladmin.Name = "paneladmin";
-            this.paneladmin.Size = new System.Drawing.Size(242, 461);
+            this.paneladmin.Size = new System.Drawing.Size(270, 461);
             this.paneladmin.TabIndex = 0;
             this.paneladmin.Paint += new System.Windows.Forms.PaintEventHandler(this.paneladmin_Paint);
             // 
@@ -109,21 +109,41 @@
             // 
             this.btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn.ForeColor = System.Drawing.Color.Transparent;
-            this.btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn.Location = new System.Drawing.Point(3, 399);
+            this.btn.Image = ((System.Drawing.Image)(resources.GetObject("btn.Image")));
+            this.btn.Location = new System.Drawing.Point(187, 9);
             this.btn.Name = "btn";
-            this.btn.Size = new System.Drawing.Size(236, 48);
+            this.btn.Size = new System.Drawing.Size(49, 49);
             this.btn.TabIndex = 0;
-            this.btn.Text = "Cerrar sesión";
+            this.btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn.UseVisualStyleBackColor = true;
             this.btn.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // shapeContainer1
+            // 
+            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
+            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
+            this.shapeContainer1.Name = "shapeContainer1";
+            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.lineShape1});
+            this.shapeContainer1.Size = new System.Drawing.Size(270, 461);
+            this.shapeContainer1.TabIndex = 5;
+            this.shapeContainer1.TabStop = false;
+            // 
+            // lineShape1
+            // 
+            this.lineShape1.BorderColor = System.Drawing.SystemColors.Control;
+            this.lineShape1.Name = "lineShape1";
+            this.lineShape1.X1 = 5;
+            this.lineShape1.X2 = 229;
+            this.lineShape1.Y1 = 88;
+            this.lineShape1.Y2 = 88;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(242, 36);
+            this.pictureBox1.Location = new System.Drawing.Point(270, 36);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(608, 414);
+            this.pictureBox1.Size = new System.Drawing.Size(580, 414);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -131,7 +151,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(571, 3);
+            this.pictureBox2.Location = new System.Drawing.Point(556, 3);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(24, 27);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -142,7 +162,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(541, 3);
+            this.pictureBox3.Location = new System.Drawing.Point(528, 3);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(24, 27);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -156,30 +176,10 @@
             this.panel2admin.Controls.Add(this.pictureBox2);
             this.panel2admin.Controls.Add(this.pictureBox3);
             this.panel2admin.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2admin.Location = new System.Drawing.Point(242, 0);
+            this.panel2admin.Location = new System.Drawing.Point(270, 0);
             this.panel2admin.Name = "panel2admin";
-            this.panel2admin.Size = new System.Drawing.Size(611, 36);
+            this.panel2admin.Size = new System.Drawing.Size(583, 36);
             this.panel2admin.TabIndex = 2;
-            // 
-            // shapeContainer1
-            // 
-            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
-            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer1.Name = "shapeContainer1";
-            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.lineShape1});
-            this.shapeContainer1.Size = new System.Drawing.Size(242, 461);
-            this.shapeContainer1.TabIndex = 5;
-            this.shapeContainer1.TabStop = false;
-            // 
-            // lineShape1
-            // 
-            this.lineShape1.BorderColor = System.Drawing.SystemColors.Control;
-            this.lineShape1.Name = "lineShape1";
-            this.lineShape1.X1 = 5;
-            this.lineShape1.X2 = 229;
-            this.lineShape1.Y1 = 88;
-            this.lineShape1.Y2 = 88;
             // 
             // MenuAdministrator
             // 
@@ -207,7 +207,6 @@
         #endregion
 
         private System.Windows.Forms.Panel paneladmin;
-        private System.Windows.Forms.Button btn;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
@@ -218,5 +217,6 @@
         private System.Windows.Forms.Label lblEmail;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
+        private System.Windows.Forms.Button btn;
     }
 }
