@@ -8,6 +8,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Common1.Cache;
 
 namespace Presentation.Administrator
 {
@@ -16,9 +17,25 @@ namespace Presentation.Administrator
         public MenuAdministrator()
         {
             InitializeComponent();
-            //testkoke
+            
 
+            //Agregar metodo en el formulario para mostrar datos de usuarios
+            LoadUserData();
         }
+
+        
+
+        //metodo mostrar datos de usuario
+
+        private void LoadUserData()
+        {
+            lblname.Text = UserLoginCache.firstName+ " "+UserLoginCache.lastName;
+            lblposition.Text = UserLoginCache.position;
+            lblEmail.Text = UserLoginCache.email;
+        }
+
+
+
         //arrastrar formulario
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
