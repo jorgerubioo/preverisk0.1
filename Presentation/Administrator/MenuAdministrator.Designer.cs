@@ -63,7 +63,7 @@
             this.paneladmin.Dock = System.Windows.Forms.DockStyle.Left;
             this.paneladmin.Location = new System.Drawing.Point(0, 0);
             this.paneladmin.Name = "paneladmin";
-            this.paneladmin.Size = new System.Drawing.Size(246, 461);
+            this.paneladmin.Size = new System.Drawing.Size(246, 601);
             this.paneladmin.TabIndex = 0;
             this.paneladmin.Paint += new System.Windows.Forms.PaintEventHandler(this.paneladmin_Paint);
             // 
@@ -127,7 +127,7 @@
             this.shapeContainer1.Name = "shapeContainer1";
             this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
             this.lineShape1});
-            this.shapeContainer1.Size = new System.Drawing.Size(246, 461);
+            this.shapeContainer1.Size = new System.Drawing.Size(246, 601);
             this.shapeContainer1.TabIndex = 5;
             this.shapeContainer1.TabStop = false;
             // 
@@ -143,9 +143,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(246, 36);
+            this.pictureBox1.Location = new System.Drawing.Point(252, 36);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(604, 414);
+            this.pictureBox1.Size = new System.Drawing.Size(651, 528);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -153,7 +153,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(556, 3);
+            this.pictureBox2.Location = new System.Drawing.Point(633, 6);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(24, 27);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -164,7 +164,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(528, 3);
+            this.pictureBox3.Location = new System.Drawing.Point(603, 6);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(24, 27);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -180,7 +180,7 @@
             this.panel2admin.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2admin.Location = new System.Drawing.Point(246, 0);
             this.panel2admin.Name = "panel2admin";
-            this.panel2admin.Size = new System.Drawing.Size(607, 36);
+            this.panel2admin.Size = new System.Drawing.Size(669, 36);
             this.panel2admin.TabIndex = 2;
             this.panel2admin.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2admin_Paint);
             // 
@@ -203,7 +203,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(853, 461);
+            this.ClientSize = new System.Drawing.Size(915, 601);
             this.Controls.Add(this.panel2admin);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.paneladmin);
