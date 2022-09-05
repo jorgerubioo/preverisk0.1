@@ -73,5 +73,10 @@ namespace Presentation.Administrator
         {
 
         }
+
+        private void panel2admin_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

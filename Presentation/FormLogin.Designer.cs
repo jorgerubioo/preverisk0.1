@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.txtuser = new System.Windows.Forms.TextBox();
             this.txtpass = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -37,12 +38,11 @@
             this.linkpass = new System.Windows.Forms.LinkLabel();
             this.btncerrar = new System.Windows.Forms.PictureBox();
             this.btnminimizar = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.lblErrorMessage = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btncerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnminimizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -55,10 +55,23 @@
             this.panel1.Size = new System.Drawing.Size(250, 330);
             this.panel1.TabIndex = 0;
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(-53, -67);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(371, 425);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 0;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox4_MouseDown);
+            // 
             // txtuser
             // 
+            this.txtuser.BackColor = System.Drawing.Color.White;
             this.txtuser.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtuser.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtuser.ForeColor = System.Drawing.Color.Black;
             this.txtuser.Location = new System.Drawing.Point(342, 87);
             this.txtuser.Name = "txtuser";
             this.txtuser.Size = new System.Drawing.Size(344, 25);
@@ -69,9 +82,12 @@
             // 
             // txtpass
             // 
+            this.txtpass.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
+            this.txtpass.BackColor = System.Drawing.Color.White;
             this.txtpass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtpass.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtpass.Location = new System.Drawing.Point(342, 152);
+            this.txtpass.ForeColor = System.Drawing.Color.Black;
+            this.txtpass.Location = new System.Drawing.Point(342, 141);
             this.txtpass.Name = "txtpass";
             this.txtpass.Size = new System.Drawing.Size(344, 25);
             this.txtpass.TabIndex = 2;
@@ -86,7 +102,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(452, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(126, 40);
+            this.label1.Size = new System.Drawing.Size(122, 40);
             this.label1.TabIndex = 3;
             this.label1.Text = "LOGIN";
             // 
@@ -142,28 +158,18 @@
             this.btnminimizar.TabStop = false;
             this.btnminimizar.Click += new System.EventHandler(this.btnminimizar_Click);
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(-53, -67);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(371, 425);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 0;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox4_MouseDown);
-            // 
             // lblErrorMessage
             // 
             this.lblErrorMessage.AutoSize = true;
             this.lblErrorMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblErrorMessage.ForeColor = System.Drawing.Color.White;
+            this.lblErrorMessage.Image = ((System.Drawing.Image)(resources.GetObject("lblErrorMessage.Image")));
             this.lblErrorMessage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lblErrorMessage.Location = new System.Drawing.Point(339, 201);
             this.lblErrorMessage.Name = "lblErrorMessage";
-            this.lblErrorMessage.Size = new System.Drawing.Size(75, 22);
+            this.lblErrorMessage.Size = new System.Drawing.Size(110, 22);
             this.lblErrorMessage.TabIndex = 9;
-            this.lblErrorMessage.Text = "ERROR";
+            this.lblErrorMessage.Text = "       ERROR";
             this.lblErrorMessage.Visible = false;
             // 
             // FormLogin
@@ -186,11 +192,12 @@
             this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.FormLogin_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FormLogin_MouseDown);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btncerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnminimizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

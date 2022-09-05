@@ -142,9 +142,9 @@ namespace Presentation
                         txtuser.Focus();
                     }
                 }
-                else msgError("Por favor ingresar contraseña");
+                else msgError("Usuario o contraseña incorrectos");
             }
-            else msgError("Por favor ingresar usuario");
+            else msgError("Usuario o contraseña incorrectos");
         }
         }
 
@@ -166,6 +166,10 @@ namespace Presentation
             txtuser.Focus();
         }
 
+        private void FormLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
 

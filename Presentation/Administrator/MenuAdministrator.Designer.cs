@@ -34,13 +34,14 @@
             this.lblposition = new System.Windows.Forms.Label();
             this.lblname = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.btn = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel2admin = new System.Windows.Forms.Panel();
+            this.btnPerfilUser = new System.Windows.Forms.Button();
             this.paneladmin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -52,16 +53,17 @@
             // paneladmin
             // 
             this.paneladmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(43)))), ((int)(((byte)(91)))));
+            this.paneladmin.Controls.Add(this.btnPerfilUser);
             this.paneladmin.Controls.Add(this.lblEmail);
             this.paneladmin.Controls.Add(this.lblposition);
             this.paneladmin.Controls.Add(this.lblname);
             this.paneladmin.Controls.Add(this.pictureBox4);
-            this.paneladmin.Controls.Add(this.btn);
+            this.paneladmin.Controls.Add(this.btnLogout);
             this.paneladmin.Controls.Add(this.shapeContainer1);
             this.paneladmin.Dock = System.Windows.Forms.DockStyle.Left;
             this.paneladmin.Location = new System.Drawing.Point(0, 0);
             this.paneladmin.Name = "paneladmin";
-            this.paneladmin.Size = new System.Drawing.Size(270, 461);
+            this.paneladmin.Size = new System.Drawing.Size(246, 461);
             this.paneladmin.TabIndex = 0;
             this.paneladmin.Paint += new System.Windows.Forms.PaintEventHandler(this.paneladmin_Paint);
             // 
@@ -105,18 +107,18 @@
             this.pictureBox4.TabIndex = 1;
             this.pictureBox4.TabStop = false;
             // 
-            // btn
+            // btnLogout
             // 
-            this.btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn.ForeColor = System.Drawing.Color.Transparent;
-            this.btn.Image = ((System.Drawing.Image)(resources.GetObject("btn.Image")));
-            this.btn.Location = new System.Drawing.Point(187, 9);
-            this.btn.Name = "btn";
-            this.btn.Size = new System.Drawing.Size(49, 49);
-            this.btn.TabIndex = 0;
-            this.btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn.UseVisualStyleBackColor = true;
-            this.btn.Click += new System.EventHandler(this.btn_Click);
+            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(43)))), ((int)(((byte)(91)))));
+            this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
+            this.btnLogout.Location = new System.Drawing.Point(180, 12);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(50, 46);
+            this.btnLogout.TabIndex = 0;
+            this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btn_Click);
             // 
             // shapeContainer1
             // 
@@ -125,7 +127,7 @@
             this.shapeContainer1.Name = "shapeContainer1";
             this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
             this.lineShape1});
-            this.shapeContainer1.Size = new System.Drawing.Size(270, 461);
+            this.shapeContainer1.Size = new System.Drawing.Size(246, 461);
             this.shapeContainer1.TabIndex = 5;
             this.shapeContainer1.TabStop = false;
             // 
@@ -141,9 +143,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(270, 36);
+            this.pictureBox1.Location = new System.Drawing.Point(246, 36);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(580, 414);
+            this.pictureBox1.Size = new System.Drawing.Size(604, 414);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -176,10 +178,26 @@
             this.panel2admin.Controls.Add(this.pictureBox2);
             this.panel2admin.Controls.Add(this.pictureBox3);
             this.panel2admin.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2admin.Location = new System.Drawing.Point(270, 0);
+            this.panel2admin.Location = new System.Drawing.Point(246, 0);
             this.panel2admin.Name = "panel2admin";
-            this.panel2admin.Size = new System.Drawing.Size(583, 36);
+            this.panel2admin.Size = new System.Drawing.Size(607, 36);
             this.panel2admin.TabIndex = 2;
+            this.panel2admin.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2admin_Paint);
+            // 
+            // btnPerfilUser
+            // 
+            this.btnPerfilUser.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(72)))), ((int)(((byte)(101)))));
+            this.btnPerfilUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPerfilUser.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPerfilUser.ForeColor = System.Drawing.Color.White;
+            this.btnPerfilUser.Image = ((System.Drawing.Image)(resources.GetObject("btnPerfilUser.Image")));
+            this.btnPerfilUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPerfilUser.Location = new System.Drawing.Point(0, 119);
+            this.btnPerfilUser.Name = "btnPerfilUser";
+            this.btnPerfilUser.Size = new System.Drawing.Size(243, 36);
+            this.btnPerfilUser.TabIndex = 6;
+            this.btnPerfilUser.Text = "Usuarios";
+            this.btnPerfilUser.UseVisualStyleBackColor = true;
             // 
             // MenuAdministrator
             // 
@@ -217,6 +235,7 @@
         private System.Windows.Forms.Label lblEmail;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
-        private System.Windows.Forms.Button btn;
+        private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Button btnPerfilUser;
     }
 }
