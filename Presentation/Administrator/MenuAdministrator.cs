@@ -49,6 +49,11 @@ namespace Presentation.Administrator
             if (MessageBox.Show("¿Estas segur@ de cerrar sesión?", "Advertencia",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 this.Close();
+            Presentation.FormLogin mainMenu = new Presentation.FormLogin();
+            mainMenu.Show();
+           
+
+
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
