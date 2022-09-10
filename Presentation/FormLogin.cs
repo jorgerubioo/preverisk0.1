@@ -170,6 +170,12 @@ namespace Presentation
         {
 
         }
+
+        private void linkpass_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            var recoverPassword = new FormRecoverPassword();
+            recoverPassword.ShowDialog();
+        }
     }
 
 

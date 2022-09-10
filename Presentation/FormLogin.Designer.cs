@@ -135,6 +135,7 @@
             this.linkpass.TabStop = true;
             this.linkpass.Tag = "0";
             this.linkpass.Text = "¿Ha olvidado la contraseña?";
+            this.linkpass.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkpass_LinkClicked);
             // 
             // btncerrar
             // 
