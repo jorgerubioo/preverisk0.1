@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Presentation.Administrator
 {
-    public partial class UsuarioAdmin : Form
+    public partial class Form3 : Form
     {
-        public UsuarioAdmin()
+        public Form3()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

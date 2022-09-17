@@ -107,13 +107,16 @@ namespace Presentation
                     {
                         if (UserLoginCache.position==Positions.Administrator)
                         {
-
-                            
-                            
-                            Administrator.MenuAdministrator mainMenu = new Administrator.MenuAdministrator();
-                            MessageBox.Show("Bienvenid@ " + UserLoginCache.firstName + " " + UserLoginCache.lastName);
-                            mainMenu.Show();
                             this.Hide();
+                            Welcome welcome = new Welcome();
+                            welcome.ShowDialog();
+                            Administrator.FormPrincipal mainMenu = new Administrator.FormPrincipal();
+                            mainMenu.Show();
+                            mainMenu.FormClosed += Logout;
+                            
+
+
+
 
                         }
                         if (UserLoginCache.position == Positions.Professional)

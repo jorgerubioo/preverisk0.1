@@ -53,17 +53,29 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Administrator\MenuAdministrator.cs">
+    <Compile Include="Administrator\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administrator\MenuAdministrator.Designer.cs">
-      <DependentUpon>MenuAdministrator.cs</DependentUpon>
+    <Compile Include="Administrator\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Administrator\UsuarioAdmin.cs">
+    <Compile Include="Administrator\Form2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administrator\UsuarioAdmin.Designer.cs">
-      <DependentUpon>UsuarioAdmin.cs</DependentUpon>
+    <Compile Include="Administrator\Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\FormPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\FormPrincipal.designer.cs">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Client\MenuClient.cs">
       <SubType>Form</SubType>
@@ -97,8 +109,17 @@
     <Compile Include="Welcome.Designer.cs">
       <DependentUpon>Welcome.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Administrator\MenuAdministrator.resx">
-      <DependentUpon>MenuAdministrator.cs</DependentUpon>
+    <EmbeddedResource Include="Administrator\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\FormPrincipal.resx">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
@@ -115,6 +136,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Welcome.resx">
+      <DependentUpon>Welcome.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
