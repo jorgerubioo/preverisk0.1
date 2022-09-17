@@ -32,7 +32,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.panelformularios = new System.Windows.Forms.Panel();
+            this.btnSlide = new System.Windows.Forms.PictureBox();
             this.panelAbajo = new System.Windows.Forms.Panel();
+            this.lblFecha = new System.Windows.Forms.Label();
+            this.lblHora = new System.Windows.Forms.Label();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.lblposition = new System.Windows.Forms.Label();
+            this.lblname = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.btnLogout = new System.Windows.Forms.Button();
@@ -45,16 +52,12 @@
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnMaximizar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
-            this.lblEmail = new System.Windows.Forms.Label();
-            this.lblposition = new System.Windows.Forms.Label();
-            this.lblname = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.lblHora = new System.Windows.Forms.Label();
-            this.lblFecha = new System.Windows.Forms.Label();
             this.horaFecha = new System.Windows.Forms.Timer(this.components);
             this.panelContenedor.SuspendLayout();
             this.panelformularios.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSlide)).BeginInit();
             this.panelAbajo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -63,7 +66,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // panelContenedor
@@ -82,17 +84,32 @@
             // panelformularios
             // 
             this.panelformularios.BackColor = System.Drawing.SystemColors.Control;
+            this.panelformularios.Controls.Add(this.btnSlide);
             this.panelformularios.Controls.Add(this.panelAbajo);
             this.panelformularios.Controls.Add(this.pictureBox1);
             this.panelformularios.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelformularios.Location = new System.Drawing.Point(251, 39);
+            this.panelformularios.Location = new System.Drawing.Point(169, 39);
             this.panelformularios.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelformularios.Name = "panelformularios";
-            this.panelformularios.Size = new System.Drawing.Size(1112, 622);
+            this.panelformularios.Size = new System.Drawing.Size(1194, 622);
             this.panelformularios.TabIndex = 2;
+            // 
+            // btnSlide
+            // 
+            this.btnSlide.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSlide.Image = ((System.Drawing.Image)(resources.GetObject("btnSlide.Image")));
+            this.btnSlide.Location = new System.Drawing.Point(0, 5);
+            this.btnSlide.Name = "btnSlide";
+            this.btnSlide.Size = new System.Drawing.Size(35, 35);
+            this.btnSlide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnSlide.TabIndex = 2;
+            this.btnSlide.TabStop = false;
+            this.btnSlide.Click += new System.EventHandler(this.btnSlide_Click);
             // 
             // panelAbajo
             // 
+            this.panelAbajo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panelAbajo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(93)))), ((int)(((byte)(142)))));
             this.panelAbajo.Controls.Add(this.lblFecha);
             this.panelAbajo.Controls.Add(this.lblHora);
@@ -100,11 +117,72 @@
             this.panelAbajo.Controls.Add(this.lblposition);
             this.panelAbajo.Controls.Add(this.lblname);
             this.panelAbajo.Controls.Add(this.pictureBox4);
-            this.panelAbajo.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelAbajo.Location = new System.Drawing.Point(0, 522);
             this.panelAbajo.Name = "panelAbajo";
-            this.panelAbajo.Size = new System.Drawing.Size(1112, 100);
+            this.panelAbajo.Size = new System.Drawing.Size(1196, 100);
             this.panelAbajo.TabIndex = 1;
+            // 
+            // lblFecha
+            // 
+            this.lblFecha.AutoSize = true;
+            this.lblFecha.Font = new System.Drawing.Font("Candara Light", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFecha.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblFecha.Location = new System.Drawing.Point(733, 54);
+            this.lblFecha.Name = "lblFecha";
+            this.lblFecha.Size = new System.Drawing.Size(92, 37);
+            this.lblFecha.TabIndex = 10;
+            this.lblFecha.Text = "Fecha";
+            // 
+            // lblHora
+            // 
+            this.lblHora.AutoSize = true;
+            this.lblHora.Font = new System.Drawing.Font("Candara Light", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHora.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblHora.Location = new System.Drawing.Point(868, 9);
+            this.lblHora.Name = "lblHora";
+            this.lblHora.Size = new System.Drawing.Size(103, 49);
+            this.lblHora.TabIndex = 9;
+            this.lblHora.Text = "Hora";
+            // 
+            // lblEmail
+            // 
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.ForeColor = System.Drawing.Color.White;
+            this.lblEmail.Location = new System.Drawing.Point(82, 72);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(44, 16);
+            this.lblEmail.TabIndex = 8;
+            this.lblEmail.Text = "Email:";
+            // 
+            // lblposition
+            // 
+            this.lblposition.AutoSize = true;
+            this.lblposition.ForeColor = System.Drawing.Color.White;
+            this.lblposition.Location = new System.Drawing.Point(82, 52);
+            this.lblposition.Name = "lblposition";
+            this.lblposition.Size = new System.Drawing.Size(31, 16);
+            this.lblposition.TabIndex = 7;
+            this.lblposition.Text = "Rol:";
+            // 
+            // lblname
+            // 
+            this.lblname.AutoSize = true;
+            this.lblname.ForeColor = System.Drawing.Color.White;
+            this.lblname.Location = new System.Drawing.Point(82, 30);
+            this.lblname.Name = "lblname";
+            this.lblname.Size = new System.Drawing.Size(59, 16);
+            this.lblname.TabIndex = 6;
+            this.lblname.Text = "Nombre:";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(6, 22);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(70, 66);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 5;
+            this.pictureBox4.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -129,15 +207,16 @@
             this.panelMenu.Location = new System.Drawing.Point(0, 39);
             this.panelMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(251, 622);
+            this.panelMenu.Size = new System.Drawing.Size(169, 622);
             this.panelMenu.TabIndex = 1;
             // 
             // btnLogout
             // 
+            this.btnLogout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(43)))), ((int)(((byte)(91)))));
             this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
-            this.btnLogout.Location = new System.Drawing.Point(3, 564);
+            this.btnLogout.Location = new System.Drawing.Point(9, 564);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(57, 46);
             this.btnLogout.TabIndex = 4;
@@ -150,7 +229,7 @@
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(251, 117);
+            this.pictureBox2.Size = new System.Drawing.Size(166, 117);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
@@ -165,12 +244,12 @@
             this.button3.ForeColor = System.Drawing.Color.Gainsboro;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(3, 230);
+            this.button3.Location = new System.Drawing.Point(9, 230);
             this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(251, 49);
+            this.button3.Size = new System.Drawing.Size(140, 48);
             this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
+            this.button3.Text = "      button3";
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -185,12 +264,12 @@
             this.button2.ForeColor = System.Drawing.Color.Gainsboro;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(3, 176);
+            this.button2.Location = new System.Drawing.Point(8, 175);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(251, 49);
+            this.button2.Size = new System.Drawing.Size(140, 51);
             this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
+            this.button2.Text = "      button2";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -204,13 +283,12 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Gainsboro;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 122);
+            this.button1.Location = new System.Drawing.Point(9, 122);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(251, 49);
+            this.button1.Size = new System.Drawing.Size(140, 49);
             this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
+            this.button1.Text = "     button1";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -287,68 +365,6 @@
             this.btnCerrar.TabStop = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
-            // lblEmail
-            // 
-            this.lblEmail.AutoSize = true;
-            this.lblEmail.ForeColor = System.Drawing.Color.White;
-            this.lblEmail.Location = new System.Drawing.Point(82, 72);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(44, 16);
-            this.lblEmail.TabIndex = 8;
-            this.lblEmail.Text = "Email:";
-            // 
-            // lblposition
-            // 
-            this.lblposition.AutoSize = true;
-            this.lblposition.ForeColor = System.Drawing.Color.White;
-            this.lblposition.Location = new System.Drawing.Point(82, 52);
-            this.lblposition.Name = "lblposition";
-            this.lblposition.Size = new System.Drawing.Size(31, 16);
-            this.lblposition.TabIndex = 7;
-            this.lblposition.Text = "Rol:";
-            // 
-            // lblname
-            // 
-            this.lblname.AutoSize = true;
-            this.lblname.ForeColor = System.Drawing.Color.White;
-            this.lblname.Location = new System.Drawing.Point(82, 30);
-            this.lblname.Name = "lblname";
-            this.lblname.Size = new System.Drawing.Size(59, 16);
-            this.lblname.TabIndex = 6;
-            this.lblname.Text = "Nombre:";
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(6, 22);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(70, 66);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 5;
-            this.pictureBox4.TabStop = false;
-            // 
-            // lblHora
-            // 
-            this.lblHora.AutoSize = true;
-            this.lblHora.Font = new System.Drawing.Font("Candara Light", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHora.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblHora.Location = new System.Drawing.Point(969, 9);
-            this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(87, 37);
-            this.lblHora.TabIndex = 9;
-            this.lblHora.Text = "label1";
-            // 
-            // lblFecha
-            // 
-            this.lblFecha.AutoSize = true;
-            this.lblFecha.Font = new System.Drawing.Font("Candara Light", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFecha.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblFecha.Location = new System.Drawing.Point(640, 56);
-            this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(89, 37);
-            this.lblFecha.TabIndex = 10;
-            this.lblFecha.Text = "label2";
-            // 
             // horaFecha
             // 
             this.horaFecha.Enabled = true;
@@ -369,8 +385,10 @@
             this.Load += new System.EventHandler(this.FormPrincipal_Load);
             this.panelContenedor.ResumeLayout(false);
             this.panelformularios.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnSlide)).EndInit();
             this.panelAbajo.ResumeLayout(false);
             this.panelAbajo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -379,7 +397,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -408,6 +425,7 @@
         private System.Windows.Forms.Label lblFecha;
         private System.Windows.Forms.Label lblHora;
         private System.Windows.Forms.Timer horaFecha;
+        private System.Windows.Forms.PictureBox btnSlide;
     }
 }
 

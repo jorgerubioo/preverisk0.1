@@ -162,6 +162,23 @@ namespace Presentation.Administrator
             lblHora.Text = DateTime.Now.ToLongTimeString();
             lblFecha.Text = DateTime.Now.ToLongDateString();
         }
+
+        
+        private void btnSlide_Click(object sender, EventArgs e)
+        {
+            //boton para minimizar panel menu
+            if (panelMenu.Width == 169)
+            {
+                panelMenu.Width = 54;
+            }
+            else
+                panelMenu.Width = 169;
+        }
+
+       
+
+
+
         #endregion
         //METODO PARA ABRIR FORMULARIOS DENTRO DEL PANEL
         private void AbrirFormulario<MiForm>() where MiForm : Form, new() {
