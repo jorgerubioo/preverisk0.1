@@ -36,14 +36,16 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // txtUserRequest
             // 
-            this.txtUserRequest.Location = new System.Drawing.Point(239, 98);
+            this.txtUserRequest.Location = new System.Drawing.Point(239, 91);
             this.txtUserRequest.Name = "txtUserRequest";
             this.txtUserRequest.Size = new System.Drawing.Size(289, 22);
             this.txtUserRequest.TabIndex = 0;
@@ -51,11 +53,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Malgun Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label1.Location = new System.Drawing.Point(235, 47);
+            this.label1.Location = new System.Drawing.Point(235, 45);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(342, 20);
+            this.label1.Size = new System.Drawing.Size(334, 23);
             this.label1.TabIndex = 1;
             this.label1.Text = "Ingresa tu usuario o correo electronico:";
             // 
@@ -64,7 +66,7 @@
             this.btnSend.BackColor = System.Drawing.Color.White;
             this.btnSend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSend.ForeColor = System.Drawing.Color.Navy;
-            this.btnSend.Location = new System.Drawing.Point(239, 154);
+            this.btnSend.Location = new System.Drawing.Point(239, 137);
             this.btnSend.Name = "btnSend";
             this.btnSend.Size = new System.Drawing.Size(129, 28);
             this.btnSend.TabIndex = 2;
@@ -103,6 +105,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(43)))), ((int)(((byte)(91)))));
+            this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.lblResultado);
             this.panel2.Controls.Add(this.txtUserRequest);
@@ -113,6 +116,17 @@
             this.panel2.Size = new System.Drawing.Size(775, 288);
             this.panel2.TabIndex = 6;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(749, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(23, 25);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
             // FormRecoverPassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -121,6 +135,7 @@
             this.ClientSize = new System.Drawing.Size(775, 288);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormRecoverPassword";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Recuperar Contraseña";
@@ -128,6 +143,7 @@
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -141,5 +157,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

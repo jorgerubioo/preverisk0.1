@@ -130,11 +130,11 @@
             this.linkpass.LinkColor = System.Drawing.Color.White;
             this.linkpass.Location = new System.Drawing.Point(386, 291);
             this.linkpass.Name = "linkpass";
-            this.linkpass.Size = new System.Drawing.Size(255, 21);
+            this.linkpass.Size = new System.Drawing.Size(262, 21);
             this.linkpass.TabIndex = 0;
             this.linkpass.TabStop = true;
             this.linkpass.Tag = "0";
-            this.linkpass.Text = "¿Ha olvidado la contraseña?";
+            this.linkpass.Text = "¿Haz olvidado la contraseña?";
             this.linkpass.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkpass_LinkClicked);
             // 
             // btncerrar

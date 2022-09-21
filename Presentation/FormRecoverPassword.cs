@@ -24,5 +24,10 @@ namespace Presentation
             var result = user.recoverPassword(txtUserRequest.Text);
             lblResultado.Text = result;
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
