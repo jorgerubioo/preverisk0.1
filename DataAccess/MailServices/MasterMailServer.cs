@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Net.Mail;
 using System.Net;
+using System.Runtime.Remoting.Messaging;
 
 namespace DataAccess.MailServices
 {
@@ -44,7 +45,7 @@ namespace DataAccess.MailServices
                 smtpClient.Send(mailMessage);
             }
             catch(Exception ex) {
-                
+               
             }
             finally
             {

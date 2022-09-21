@@ -7,6 +7,7 @@ using System.Data;
 using System.Data.SqlClient;
 using Common1.Cache;
 using System.Xml.Linq;
+using DataAccess;
 
 namespace DataAccess { 
 
@@ -14,9 +15,9 @@ namespace DataAccess {
     {
         public bool Login(string user, string pass)
     {
-        using (var connection = GetConnection())
         {
-            connection.Open();
+                using (var connection = AbrirConexion())
+                 
             using (var command = new SqlCommand())
             {
                 command.Connection = connection;
@@ -41,15 +42,18 @@ namespace DataAccess {
                 }
                 else
                     return false;
+                   
                 }
+                
             }
         }
 
         public string recoverPassword(string userRequesting)
         {
-            using (var connection = GetConnection())
+           
             {
-                connection.Open();
+                using (var connection = AbrirConexion())
+                  
                 using (var command = new SqlCommand())
                 {
                     command.Connection = connection;
@@ -83,7 +87,23 @@ namespace DataAccess {
                         return "Lo sentimos, no tiene una cuenta con este nombre de usuario o correo electronico";
                 }
             }
+        }
 
         }
+
     }
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

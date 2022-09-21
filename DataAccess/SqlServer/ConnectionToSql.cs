@@ -4,19 +4,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
+using System.Data;
 
 namespace DataAccess
 {
-    public abstract class ConnectionToSql
-    {
-        private readonly string connectionString; 
-        public ConnectionToSql ()
+    
+
+        public class ConnectionToSql
         {
-            connectionString = "Server=LAPTOP-VTLJ41I5\\SQLEXPRESS;DataBase= PortafolioTest; integrated security= true";
+            private SqlConnection connectionString = new SqlConnection("Server=LAPTOP-VTLJ41I5\\SQLEXPRESS;DataBase= PortafolioTest; integrated security= true");
+            public SqlConnection AbrirConexion()
+            {
+                if (connectionString.State == ConnectionState.Closed)
+                    connectionString.Open();
+                return connectionString;
+            }
+            public SqlConnection CerrarConexion()
+            {
+                if (connectionString.State == ConnectionState.Open)
+                    connectionString.Close();
+                return connectionString;
+            }
         }
-        protected SqlConnection GetConnection()
-        {
-            return new SqlConnection(connectionString);
-        }
+
+
+
     }
-}
+
