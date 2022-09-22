@@ -31,9 +31,10 @@ namespace DataAccess.SqlServer
 
             }
 
-        //insertar registro
+        //insertar registro con procedimiento almacenado
         public void Insertar(string loginname, string password, string firstname, string lastname, string position, string email)
         {
+
             comando.Connection = conexion.AbrirConexion();
             comando.CommandText = "InsertarUsuarios";
             comando.CommandType = CommandType.StoredProcedure;
@@ -43,11 +44,45 @@ namespace DataAccess.SqlServer
             comando.Parameters.AddWithValue("@lastname", lastname);
             comando.Parameters.AddWithValue("@position", position);
             comando.Parameters.AddWithValue("@email", email);
+
             comando.ExecuteNonQuery();
+
+            comando.Parameters.Clear();
         }
 
+
+        //editar registros con procedimiento almacenado
+        public void Editar(string loginname, string password, string firstname, string lastname, string position, string email, int id)
+        {
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "EditarUsuarios";
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.AddWithValue("@loginname", loginname);
+            comando.Parameters.AddWithValue("@password", password);
+            comando.Parameters.AddWithValue("@firstname", firstname);
+            comando.Parameters.AddWithValue("@lastname", lastname);
+            comando.Parameters.AddWithValue("@position", position);
+            comando.Parameters.AddWithValue("@email", email);
+            comando.Parameters.AddWithValue("@id", id);
+
+            comando.ExecuteNonQuery();
+
+            comando.Parameters.Clear();
         }
+       
+
+        public void EliminarUsuario(int id) {
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "EliminarUsuarios";
+            comando.CommandType = CommandType.StoredProcedure;
+
+            comando.Parameters.AddWithValue("@id", id);
+
+            comando.ExecuteNonQuery();
+
+            comando.Parameters.Clear();
+            }
         }
 
-
+}
 
