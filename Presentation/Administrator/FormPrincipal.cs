@@ -127,7 +127,7 @@ namespace Presentation.Administrator
         private void button1_Click(object sender, EventArgs e)
         {
             AbrirFormulario<Form1>();
-            button1.BackColor = Color.FromArgb(12, 61, 92);
+            button5.BackColor = Color.FromArgb(12, 61, 92);
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -175,7 +175,9 @@ namespace Presentation.Administrator
                 panelMenu.Width = 169;
         }
 
-       
+        
+
+
 
 
 
@@ -204,7 +206,7 @@ namespace Presentation.Administrator
         }
         private void CloseForms(object sender,FormClosedEventArgs e) {
             if (Application.OpenForms["Form1"] == null)
-                button1.BackColor = Color.FromArgb(4, 41, 68);
+                button5.BackColor = Color.FromArgb(4, 41, 68);
             if (Application.OpenForms["Form2"] == null)
                 button2.BackColor = Color.FromArgb(4, 41, 68);
             if (Application.OpenForms["Form3"] == null)
