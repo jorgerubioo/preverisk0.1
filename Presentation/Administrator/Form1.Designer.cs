@@ -38,19 +38,18 @@
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtPosicion = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cmbRol = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.label8 = new System.Windows.Forms.Label();
             this.btnVolver = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -123,7 +122,7 @@
             // 
             // txtApellido
             // 
-            this.txtApellido.Location = new System.Drawing.Point(177, 151);
+            this.txtApellido.Location = new System.Drawing.Point(177, 153);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(170, 22);
             this.txtApellido.TabIndex = 10;
@@ -149,13 +148,6 @@
             this.label5.Size = new System.Drawing.Size(81, 21);
             this.label5.TabIndex = 11;
             this.label5.Text = "Posición:";
-            // 
-            // txtPosicion
-            // 
-            this.txtPosicion.Location = new System.Drawing.Point(177, 181);
-            this.txtPosicion.Name = "txtPosicion";
-            this.txtPosicion.Size = new System.Drawing.Size(170, 22);
-            this.txtPosicion.TabIndex = 12;
             // 
             // txtEmail
             // 
@@ -221,7 +213,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.cmbRol);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.txtUsuario);
@@ -232,7 +224,6 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.txtNombre);
-            this.panel1.Controls.Add(this.txtPosicion);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.txtApellido);
@@ -242,6 +233,19 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(439, 446);
             this.panel1.TabIndex = 18;
+            // 
+            // cmbRol
+            // 
+            this.cmbRol.FormattingEnabled = true;
+            this.cmbRol.Items.AddRange(new object[] {
+            "Administrator",
+            "client",
+            "Professional"});
+            this.cmbRol.Location = new System.Drawing.Point(177, 181);
+            this.cmbRol.Name = "cmbRol";
+            this.cmbRol.Size = new System.Drawing.Size(170, 24);
+            this.cmbRol.TabIndex = 18;
+            this.cmbRol.Text = "Seleccione rol";
             // 
             // label7
             // 
@@ -254,15 +258,6 @@
             this.label7.TabIndex = 16;
             this.label7.Text = "Mantenimiento de usuarios";
             // 
-            // lineShape1
-            // 
-            this.lineShape1.BorderColor = System.Drawing.Color.White;
-            this.lineShape1.Name = "lineShape1";
-            this.lineShape1.X1 = -3;
-            this.lineShape1.X2 = -1;
-            this.lineShape1.Y1 = -16;
-            this.lineShape1.Y2 = 543;
-            // 
             // shapeContainer1
             // 
             this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
@@ -273,6 +268,15 @@
             this.shapeContainer1.Size = new System.Drawing.Size(439, 446);
             this.shapeContainer1.TabIndex = 17;
             this.shapeContainer1.TabStop = false;
+            // 
+            // lineShape1
+            // 
+            this.lineShape1.BorderColor = System.Drawing.Color.White;
+            this.lineShape1.Name = "lineShape1";
+            this.lineShape1.X1 = -3;
+            this.lineShape1.X2 = -1;
+            this.lineShape1.Y1 = -16;
+            this.lineShape1.Y2 = 543;
             // 
             // label8
             // 
@@ -298,18 +302,6 @@
             this.btnVolver.Text = "Volver";
             this.btnVolver.UseVisualStyleBackColor = false;
             this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Administrator",
-            "client",
-            "Professional"});
-            this.comboBox1.Location = new System.Drawing.Point(177, 318);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 18;
             // 
             // Form1
             // 
@@ -345,7 +337,6 @@
         private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtPosicion;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnGuardar;
@@ -357,6 +348,6 @@
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnVolver;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbRol;
     }
 }

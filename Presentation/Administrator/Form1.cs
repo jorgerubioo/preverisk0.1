@@ -40,7 +40,7 @@ namespace Presentation.Administrator
         {
             if (Editar == false ) { 
             try { 
-            objetoCN.insertarUsuario(txtUsuario.Text, txtContraseña.Text, txtNombre.Text, txtApellido.Text, txtPosicion.Text, txtEmail.Text);
+            objetoCN.insertarUsuario(txtUsuario.Text, txtContraseña.Text, txtNombre.Text, txtApellido.Text, cmbRol.Text, txtEmail.Text);
 
             MessageBox.Show("Usuario ingresado correctamente");
             MostrarUsuarios();
@@ -55,7 +55,7 @@ namespace Presentation.Administrator
             if (Editar == true)
             {
                 try{
-                    objetoCN.editarUsuario(txtUsuario.Text, txtContraseña.Text, txtNombre.Text, txtApellido.Text, txtPosicion.Text, txtEmail.Text, idUsuario);
+                    objetoCN.editarUsuario(txtUsuario.Text, txtContraseña.Text, txtNombre.Text, txtApellido.Text, cmbRol.Text, txtEmail.Text, idUsuario);
                     MessageBox.Show("Usuario editado correctamente");
                     MostrarUsuarios();
                     limpiarForm();
@@ -77,7 +77,7 @@ namespace Presentation.Administrator
                 txtContraseña.Text = dataGridView1.CurrentRow.Cells["password"].Value.ToString();
                 txtNombre.Text = dataGridView1.CurrentRow.Cells["firstName"].Value.ToString();
                 txtApellido.Text = dataGridView1.CurrentRow.Cells["lastName"].Value.ToString();
-                txtPosicion.Text = dataGridView1.CurrentRow.Cells["position"].Value.ToString();
+                cmbRol.SelectedItem = dataGridView1.CurrentRow.Cells["position"].Value.ToString();
                 txtEmail.Text = dataGridView1.CurrentRow.Cells["email"].Value.ToString();
                 idUsuario = dataGridView1.CurrentRow.Cells["UserID"].Value.ToString();
 
@@ -93,8 +93,7 @@ namespace Presentation.Administrator
             txtContraseña.Clear();
             txtNombre.Clear();
             txtApellido.Clear();
-            txtPosicion.Clear();
-            txtEmail.Clear();
+           txtEmail.Clear();
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -115,6 +114,8 @@ namespace Presentation.Administrator
         {
             this.Close();
         }
+
+       
     }
     }
 
