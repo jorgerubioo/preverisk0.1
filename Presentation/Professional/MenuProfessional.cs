@@ -17,5 +17,10 @@ namespace Presentation.Professional
             InitializeComponent();
             //testerror
         }
+
+        private void MenuProfessional_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

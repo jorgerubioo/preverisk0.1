@@ -288,7 +288,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(140, 49);
             this.button5.TabIndex = 0;
-            this.button5.Text = "     button1";
+            this.button5.Text = "     Gestion";
             this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button1_Click);
