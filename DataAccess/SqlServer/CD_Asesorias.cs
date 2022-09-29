@@ -31,7 +31,8 @@ namespace DataAccess.SqlServer
 
         }
 
-       public void Insertar(string empresa, String rut, string descripcion, string fecha, string estadosolicitud ) {
+        public void Insertar(string empresa, String rut, string descripcion, string fecha, string estadosolicitud)
+        {
 
             comando.Connection = conexion.AbrirConexion();
             comando.CommandText = "InsertarAsesoria";
@@ -43,7 +44,10 @@ namespace DataAccess.SqlServer
             comando.Parameters.AddWithValue("@estadosolicitud", estadosolicitud);
             comando.ExecuteNonQuery();
         }
-}
+
+
+
+    }
 
 }
 

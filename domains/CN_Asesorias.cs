@@ -9,6 +9,7 @@ using DataAccess;
 using DataAccess.SqlServer;
 
 
+
 namespace domains
 {
     public class CN_Asesorias
@@ -23,9 +24,15 @@ namespace domains
 
         }
 
-        public void InsertarAses(string empresa, String rut, string descripcion, string fecha, string estadosolicitud) {
+        public void InsertarAsese(string empresa, String rut, string descripcion, string fecha, string estadosolicitud)
+        {
             objetoCD.Insertar(empresa, rut, descripcion, fecha, estadosolicitud);
+
+
+
+        }
+
+
     }
 }
 
-}

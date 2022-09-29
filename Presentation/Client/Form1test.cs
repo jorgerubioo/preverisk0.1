@@ -33,8 +33,8 @@ namespace Presentation.Client
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            try { 
-            objetoCN.InsertarAses(txtEmpresa.Text, txtRut.Text, txtDescripcion.Text, txtFecha.Text, txtEstadosolicitud.Text);
+            try {       
+           objetoCN.InsertarAsese ( txtEmpresa.Text, txtRut.Text, txtDescripcion.Text, txtFecha.Text, txtEstadosolicitud.Text);
             MessageBox.Show("se solicito correctamente");
             MostrarAsesori();
             }
@@ -43,7 +43,7 @@ namespace Presentation.Client
                 MessageBox.Show("no se pudo ingresar la solicitud por: "+ex);
             }
         }
-
+        
        
 
         private void btnVolver_Click(object sender, EventArgs e)
@@ -54,3 +54,4 @@ namespace Presentation.Client
         
     }
 }
+

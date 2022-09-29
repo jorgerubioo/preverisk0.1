@@ -28,5 +28,34 @@ namespace DataAccess.SqlServer
             return tabla;
 
         }
+
+        public void Insertar(string empresa, String rut, string descripcion, string fecha, string estadosolicitud)
+        {
+
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "InsertarAsesoria";
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.AddWithValue("@empresa", empresa);
+            comando.Parameters.AddWithValue("@rut", rut);
+            comando.Parameters.AddWithValue("@descripcion", descripcion);
+            comando.Parameters.AddWithValue("@fecha", fecha);
+            comando.Parameters.AddWithValue("@estadosolicitud", estadosolicitud);
+            comando.ExecuteNonQuery();
+        }
+
+        public void Editar (string empresa, String rut, string descripcion, string fecha, string estadosolicitud, int id)
+        {
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "EditarAsesoria";
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.AddWithValue("@empresa", empresa);
+            comando.Parameters.AddWithValue("@rut", rut);
+            comando.Parameters.AddWithValue("@descripcion", descripcion);
+            comando.Parameters.AddWithValue("@fecha", fecha);
+            comando.Parameters.AddWithValue("@estadosolicitud", estadosolicitud);
+            comando.Parameters.AddWithValue("@id", id);
+            comando.ExecuteNonQuery();
+        }
+
     }
 }

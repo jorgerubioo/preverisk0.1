@@ -21,6 +21,23 @@ namespace domains
             return tabla;
 
         }
+
+        public void InsertarAses(string empresa, String rut, string descripcion, string fecha, string estadosolicitud)
+        {
+            objetoCD.Insertar(empresa, rut, descripcion, fecha, estadosolicitud);
+        
+
+
     }
+
+
+        public void EditarAses(string empresa, String rut, string descripcion, string fecha, string estadosolicitud, string id)
+        {
+          
+            objetoCD.Editar(empresa, rut, descripcion, fecha, estadosolicitud, Convert.ToInt32(id));
+        }
     }
+}
+
+
 
