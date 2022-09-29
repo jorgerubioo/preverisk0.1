@@ -49,8 +49,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.cmbRol = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.label8 = new System.Windows.Forms.Label();
             this.btnVolver = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -264,7 +262,6 @@
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.txtApellido);
-            this.panel1.Controls.Add(this.shapeContainer1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Location = new System.Drawing.Point(819, 0);
             this.panel1.Name = "panel1";
@@ -294,26 +291,6 @@
             this.label7.Size = new System.Drawing.Size(274, 23);
             this.label7.TabIndex = 16;
             this.label7.Text = "Mantenimiento de usuarios";
-            // 
-            // shapeContainer1
-            // 
-            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
-            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer1.Name = "shapeContainer1";
-            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.lineShape1});
-            this.shapeContainer1.Size = new System.Drawing.Size(407, 549);
-            this.shapeContainer1.TabIndex = 17;
-            this.shapeContainer1.TabStop = false;
-            // 
-            // lineShape1
-            // 
-            this.lineShape1.BorderColor = System.Drawing.Color.White;
-            this.lineShape1.Name = "lineShape1";
-            this.lineShape1.X1 = -3;
-            this.lineShape1.X2 = -1;
-            this.lineShape1.Y1 = -16;
-            this.lineShape1.Y2 = 543;
             // 
             // label8
             // 
@@ -381,8 +358,6 @@
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label7;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
-        private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnVolver;
         private System.Windows.Forms.ComboBox cmbRol;
