@@ -59,12 +59,6 @@
     <Compile Include="Administrator\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Administrator\Form2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Administrator\Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
-    </Compile>
     <Compile Include="Administrator\Form3.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +95,12 @@
     <Compile Include="FormRecoverPassword.Designer.cs">
       <DependentUpon>FormRecoverPassword.cs</DependentUpon>
     </Compile>
+    <Compile Include="Professional\Asesorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Professional\Asesorias.Designer.cs">
+      <DependentUpon>Asesorias.cs</DependentUpon>
+    </Compile>
     <Compile Include="Professional\MenuProfessional.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,9 +117,6 @@
     </Compile>
     <EmbeddedResource Include="Administrator\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Administrator\Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Administrator\Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
@@ -138,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormRecoverPassword.resx">
       <DependentUpon>FormRecoverPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Professional\Asesorias.resx">
+      <DependentUpon>Asesorias.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Professional\MenuProfessional.resx">
       <DependentUpon>MenuProfessional.cs</DependentUpon>

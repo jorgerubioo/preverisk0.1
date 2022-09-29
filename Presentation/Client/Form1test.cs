@@ -27,7 +27,30 @@ namespace Presentation.Client
 
         private void MostrarAsesori ()
         {
-            dataGridView1.DataSource = objetoCN.MostrarAses();
+            CN_Asesorias objeto = new CN_Asesorias ();
+            dataGridView1.DataSource = objeto.MostrarAses();
         }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            try { 
+            objetoCN.InsertarAses(txtEmpresa.Text, txtRut.Text, txtDescripcion.Text, txtFecha.Text, txtEstadosolicitud.Text);
+            MessageBox.Show("se solicito correctamente");
+            MostrarAsesori();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("no se pudo ingresar la solicitud por: "+ex);
+            }
+        }
+
+       
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }

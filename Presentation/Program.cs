@@ -1,4 +1,5 @@
-﻿using Presentation.Client;
+﻿using Presentation.Administrator;
+using Presentation.Client;
 using Presentation.Professional;
 using System;
 using System.Collections.Generic;
@@ -18,7 +19,7 @@ namespace Presentation
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1test());
+            Application.Run(new Asesorias());
         }
     }
 }
