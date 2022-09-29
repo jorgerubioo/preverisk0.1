@@ -136,6 +136,7 @@ namespace Presentation
                         {
                             this.Hide();
                             Welcome welcome = new Welcome();
+                            welcome.ShowDialog();
                             Client.MenuClient mainMenu = new Client.MenuClient();
                             mainMenu.Show();
                             mainMenu.FormClosed += Logout;

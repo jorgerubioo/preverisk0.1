@@ -1,4 +1,5 @@
-﻿using Presentation.Professional;
+﻿using Presentation.Client;
+using Presentation.Professional;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace Presentation
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormLogin());
+            Application.Run(new Form1test());
         }
     }
 }
