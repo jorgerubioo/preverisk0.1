@@ -122,21 +122,25 @@ namespace Presentation
                         if (UserLoginCache.position == Positions.Professional)
                         {
 
-
-                            Professional.MenuProfessional mainMenu = new Professional.MenuProfessional();
-                            MessageBox.Show("Bienvenid@ " + UserLoginCache.firstName + " " + UserLoginCache.lastName);
-                            mainMenu.Show();
                             this.Hide();
+                            Welcome welcome = new Welcome();
+                            welcome.ShowDialog();
+                            Professional.MenuProfessional mainMenu = new Professional.MenuProfessional();
+                            mainMenu.Show();
+                            mainMenu.FormClosed += Logout;
+
+
                         }
 
                         if (UserLoginCache.position == Positions.client)
                         {
-
-
-                            Client.MenuClient mainMenu = new Client.MenuClient();
-                            MessageBox.Show("Bienvenid@ " + UserLoginCache.firstName + " " + UserLoginCache.lastName);
-                            mainMenu.Show();
                             this.Hide();
+                            Welcome welcome = new Welcome();
+                            Client.MenuClient mainMenu = new Client.MenuClient();
+                            mainMenu.Show();
+                            mainMenu.FormClosed += Logout;
+
+                          
                              }     
                     else
                     {
