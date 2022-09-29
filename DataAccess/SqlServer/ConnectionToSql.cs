@@ -23,7 +23,7 @@ namespace DataAccess
             {
                 if (connectionString.State == ConnectionState.Open)
                     connectionString.Close();
-                return connectionString;
+                return connectionString;//ss
             }
         }
 
