@@ -213,6 +213,20 @@ namespace Presentation.Professional
             lblfechap.Text = DateTime.Now.ToLongDateString();
         }
 
+        private void btnLogout_Click_1(object sender, EventArgs e)
+        {
+            //corregir opcion de "NO"
+            if (MessageBox.Show("¿Estas segur@ de cerrar sesión?", "Advertencia",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                this.Close();
+            Presentation.FormLogin mainMenu = new Presentation.FormLogin();
+            mainMenu.Show();
+
+        }
+
+
+
+
 
 
 

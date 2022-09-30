@@ -81,5 +81,10 @@ namespace Presentation.Professional
             else
                 MessageBox.Show("seleccione una fila por favor");
         }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

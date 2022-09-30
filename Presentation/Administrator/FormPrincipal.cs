@@ -178,10 +178,9 @@ namespace Presentation.Administrator
                 panelMenu.Width = 169;
         }
 
-        private void lblname_Click(object sender, EventArgs e)
-        {
+       
 
-        }
+
 
 
 

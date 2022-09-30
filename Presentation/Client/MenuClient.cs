@@ -203,6 +203,32 @@ namespace Presentation.Client
             lblfechac.Text = DateTime.Now.ToLongDateString();
         }
 
+        private void panelformularios_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panelContenedor_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            var emergenciacliente = new emergenciacliente();
+            emergenciacliente.ShowDialog();
+        }
+
+        
+
+
+
+
+
+
+
+
+
 
         #endregion
         //METODO PARA ABRIR FORMULARIOS DENTRO DEL PANEL

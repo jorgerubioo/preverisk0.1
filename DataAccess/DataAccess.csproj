@@ -48,6 +48,7 @@
     <Compile Include="SqlServer\CD_Usuarios.cs" />
     <Compile Include="SqlServer\ConnectionToSql.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlServer\CD_emergenciacliente.cs" />
     <Compile Include="SqlServer\UserDao.cs" />
   </ItemGroup>
   <ItemGroup>

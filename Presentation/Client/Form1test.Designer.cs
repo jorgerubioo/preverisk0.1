@@ -51,6 +51,8 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
             this.panel1.Controls.Add(this.txtEstadosolicitud);
             this.panel1.Controls.Add(this.txtFecha);
@@ -62,9 +64,8 @@
             this.panel1.Controls.Add(this.txtRut);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.txtDescripcion);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel1.Location = new System.Drawing.Point(990, 0);
+            this.panel1.Location = new System.Drawing.Point(1182, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(409, 517);
             this.panel1.TabIndex = 1;
@@ -223,7 +224,7 @@
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(915, 292);
+            this.dataGridView1.Size = new System.Drawing.Size(650, 294);
             this.dataGridView1.TabIndex = 20;
             // 
             // btnVolver
@@ -232,7 +233,7 @@
             this.btnVolver.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(99)))), ((int)(((byte)(177)))));
             this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnVolver.ForeColor = System.Drawing.Color.White;
-            this.btnVolver.Location = new System.Drawing.Point(866, 423);
+            this.btnVolver.Location = new System.Drawing.Point(601, 429);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(86, 40);
             this.btnVolver.TabIndex = 21;
@@ -245,12 +246,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(72)))), ((int)(((byte)(101)))));
-            this.ClientSize = new System.Drawing.Size(1399, 517);
+            this.ClientSize = new System.Drawing.Size(1585, 531);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.panel1);
             this.Name = "Form1test";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);

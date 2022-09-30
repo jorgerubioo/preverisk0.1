@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CN_Asesorias.cs" />
+    <Compile Include="CN_EmergenciaClient.cs" />
     <Compile Include="CN_ProfAseso.cs" />
     <Compile Include="CN_Usuarios.cs" />
     <Compile Include="UserModel.cs" />
