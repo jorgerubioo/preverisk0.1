@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Common1.Cache;
+using Presentation.Professional;
 
 namespace Presentation.Administrator
 {
@@ -20,6 +21,8 @@ namespace Presentation.Administrator
 
             //Agregar metodo en el formulario para mostrar datos de usuarios
             LoadUserData();
+
+
         }
 
         private void LoadUserData()
@@ -175,7 +178,12 @@ namespace Presentation.Administrator
                 panelMenu.Width = 169;
         }
 
-        
+        private void lblname_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
 
 
 
