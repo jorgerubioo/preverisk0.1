@@ -100,6 +100,7 @@
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(634, 348);
             this.dataGridView1.TabIndex = 2;
+           
             // 
             // label1
             // 
@@ -267,7 +268,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(407, 549);
             this.panel1.TabIndex = 18;
-         
             // 
             // cmbRol
             // 
@@ -303,6 +303,7 @@
             this.label8.Size = new System.Drawing.Size(195, 23);
             this.label8.TabIndex = 18;
             this.label8.Text = "Listado de usuarios";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // btnVolver
             // 

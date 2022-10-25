@@ -141,7 +141,7 @@ namespace Presentation.Administrator
 
         private void button3_Click(object sender, EventArgs e)
         {
-            AbrirFormulario<Form2>();
+            AbrirFormulario<Accidentabilidad>();
             button3.BackColor = Color.FromArgb(12, 61, 92);
         }
 
@@ -154,8 +154,11 @@ namespace Presentation.Administrator
             if (MessageBox.Show("¿Estas segur@ de cerrar sesión?", "Advertencia",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 this.Close();
+            
+            
             Presentation.FormLogin mainMenu = new Presentation.FormLogin();
             mainMenu.Show();
+            
           
 
         }
@@ -166,19 +169,12 @@ namespace Presentation.Administrator
             lblFecha.Text = DateTime.Now.ToLongDateString();
         }
 
-        
-        private void btnSlide_Click(object sender, EventArgs e)
-        {
-            //boton para minimizar panel menu
-            if (panelMenu.Width == 169)
-            {
-                panelMenu.Width = 54;
-            }
-            else
-                panelMenu.Width = 169;
-        }
-
        
+
+
+
+
+
 
 
 

@@ -53,6 +53,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Administrator\Accidentabilidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\Accidentabilidad.Designer.cs">
+      <DependentUpon>Accidentabilidad.cs</DependentUpon>
+    </Compile>
     <Compile Include="Administrator\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,23 +77,41 @@
     <Compile Include="Administrator\FormPrincipal.designer.cs">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Client\emergenciacliente.cs">
+    <Compile Include="extra\Accidentabilidad.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Client\emergenciacliente.Designer.cs">
-      <DependentUpon>emergenciacliente.cs</DependentUpon>
+    <Compile Include="extra\Accidentabilidad.Designer.cs">
+      <DependentUpon>Accidentabilidad.cs</DependentUpon>
     </Compile>
-    <Compile Include="Client\Form1test.cs">
+    <Compile Include="extra\emergenciacliente1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Client\Form1test.Designer.cs">
-      <DependentUpon>Form1test.cs</DependentUpon>
+    <Compile Include="extra\emergenciacliente1.Designer.cs">
+      <DependentUpon>emergenciacliente1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Client\MenuClient.cs">
+    <Compile Include="extra\excliente2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Client\MenuClient.Designer.cs">
-      <DependentUpon>MenuClient.cs</DependentUpon>
+    <Compile Include="extra\excliente2.designer.cs">
+      <DependentUpon>excliente2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="extra\excliente3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="extra\excliente3.designer.cs">
+      <DependentUpon>excliente3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="extra\excliente1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="extra\excliente1.designer.cs">
+      <DependentUpon>excliente1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="extra\excliente4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="extra\excliente4.Designer.cs">
+      <DependentUpon>excliente4.cs</DependentUpon>
     </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
@@ -121,6 +145,9 @@
     <Compile Include="Welcome.Designer.cs">
       <DependentUpon>Welcome.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Administrator\Accidentabilidad.resx">
+      <DependentUpon>Accidentabilidad.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Administrator\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -130,14 +157,23 @@
     <EmbeddedResource Include="Administrator\FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Client\emergenciacliente.resx">
-      <DependentUpon>emergenciacliente.cs</DependentUpon>
+    <EmbeddedResource Include="extra\Accidentabilidad.resx">
+      <DependentUpon>Accidentabilidad.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Client\Form1test.resx">
-      <DependentUpon>Form1test.cs</DependentUpon>
+    <EmbeddedResource Include="extra\emergenciacliente1.resx">
+      <DependentUpon>emergenciacliente1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Client\MenuClient.resx">
-      <DependentUpon>MenuClient.cs</DependentUpon>
+    <EmbeddedResource Include="extra\excliente2.resx">
+      <DependentUpon>excliente2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="extra\excliente3.resx">
+      <DependentUpon>excliente3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="extra\excliente1.resx">
+      <DependentUpon>excliente1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="extra\excliente4.resx">
+      <DependentUpon>excliente4.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>

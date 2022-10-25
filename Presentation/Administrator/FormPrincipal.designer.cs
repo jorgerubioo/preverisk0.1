@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.panelformularios = new System.Windows.Forms.Panel();
-            this.btnSlide = new System.Windows.Forms.PictureBox();
             this.panelAbajo = new System.Windows.Forms.Panel();
             this.lblFecha = new System.Windows.Forms.Label();
             this.lblHora = new System.Windows.Forms.Label();
@@ -55,7 +54,6 @@
             this.horaFecha = new System.Windows.Forms.Timer(this.components);
             this.panelContenedor.SuspendLayout();
             this.panelformularios.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSlide)).BeginInit();
             this.panelAbajo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -70,7 +68,7 @@
             // 
             // panelContenedor
             // 
-            this.panelContenedor.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panelContenedor.BackColor = System.Drawing.SystemColors.Control;
             this.panelContenedor.Controls.Add(this.panelformularios);
             this.panelContenedor.Controls.Add(this.panelMenu);
             this.panelContenedor.Controls.Add(this.panelBarraTitulo);
@@ -83,34 +81,18 @@
             // 
             // panelformularios
             // 
+            this.panelformularios.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.panelformularios.BackColor = System.Drawing.SystemColors.Control;
-            this.panelformularios.Controls.Add(this.btnSlide);
             this.panelformularios.Controls.Add(this.panelAbajo);
             this.panelformularios.Controls.Add(this.pictureBox1);
-            this.panelformularios.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelformularios.Location = new System.Drawing.Point(169, 39);
+            this.panelformularios.Location = new System.Drawing.Point(171, 39);
             this.panelformularios.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelformularios.Name = "panelformularios";
-            this.panelformularios.Size = new System.Drawing.Size(1194, 622);
+            this.panelformularios.Size = new System.Drawing.Size(1192, 622);
             this.panelformularios.TabIndex = 2;
-            // 
-            // btnSlide
-            // 
-            this.btnSlide.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSlide.Image = ((System.Drawing.Image)(resources.GetObject("btnSlide.Image")));
-            this.btnSlide.Location = new System.Drawing.Point(0, 0);
-            this.btnSlide.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSlide.Name = "btnSlide";
-            this.btnSlide.Size = new System.Drawing.Size(35, 34);
-            this.btnSlide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnSlide.TabIndex = 2;
-            this.btnSlide.TabStop = false;
-            this.btnSlide.Click += new System.EventHandler(this.btnSlide_Click);
             // 
             // panelAbajo
             // 
-            this.panelAbajo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.panelAbajo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(93)))), ((int)(((byte)(142)))));
             this.panelAbajo.Controls.Add(this.lblFecha);
             this.panelAbajo.Controls.Add(this.lblHora);
@@ -121,7 +103,7 @@
             this.panelAbajo.Location = new System.Drawing.Point(0, 522);
             this.panelAbajo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelAbajo.Name = "panelAbajo";
-            this.panelAbajo.Size = new System.Drawing.Size(1196, 100);
+            this.panelAbajo.Size = new System.Drawing.Size(1194, 100);
             this.panelAbajo.TabIndex = 1;
             // 
             // lblFecha
@@ -210,7 +192,7 @@
             this.panelMenu.Location = new System.Drawing.Point(0, 39);
             this.panelMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(169, 622);
+            this.panelMenu.Size = new System.Drawing.Size(170, 622);
             this.panelMenu.TabIndex = 1;
             // 
             // btnLogout
@@ -249,12 +231,12 @@
             this.button3.ForeColor = System.Drawing.Color.Gainsboro;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(8, 276);
+            this.button3.Location = new System.Drawing.Point(3, 276);
             this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(140, 48);
+            this.button3.Size = new System.Drawing.Size(171, 47);
             this.button3.TabIndex = 2;
-            this.button3.Text = "      button3";
+            this.button3.Text = "Accidentabilidad";
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -390,7 +372,6 @@
             this.Load += new System.EventHandler(this.FormPrincipal_Load);
             this.panelContenedor.ResumeLayout(false);
             this.panelformularios.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btnSlide)).EndInit();
             this.panelAbajo.ResumeLayout(false);
             this.panelAbajo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -430,7 +411,6 @@
         private System.Windows.Forms.Label lblFecha;
         private System.Windows.Forms.Label lblHora;
         private System.Windows.Forms.Timer horaFecha;
-        private System.Windows.Forms.PictureBox btnSlide;
     }
 }
 

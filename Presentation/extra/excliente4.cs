@@ -10,33 +10,27 @@ using System.Windows.Forms;
 using Domain;
 using domains;
 
-namespace Presentation.Client
+namespace Presentation.extra
 {
-    public partial class Form1test : Form
+    public partial class excliente4 : Form
     {
         CN_Asesorias objetoCN = new CN_Asesorias();
-        public Form1test()
+        public excliente4()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            MostrarAsesori();
-        }
-
-        private void MostrarAsesori ()
-        {
-            CN_Asesorias objeto = new CN_Asesorias ();
-            dataGridView1.DataSource = objeto.MostrarAses();
-        }
+        
+       
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             try {       
            objetoCN.InsertarAsese ( txtEmpresa.Text, txtRut.Text, txtDescripcion.Text, txtFecha.Text, txtEstadosolicitud.Text);
             MessageBox.Show("se solicito correctamente");
-            MostrarAsesori();
+                limpiarForm();
+            
+
             }
             catch(Exception ex)
             {
@@ -51,7 +45,15 @@ namespace Presentation.Client
             this.Close();
         }
 
-       
+        private void limpiarForm()
+        {
+            txtDescripcion.Clear();
+            txtEmpresa.Clear();
+            txtRut.Clear();
+            txtFecha.Clear();
+            txtEstadosolicitud.Clear();
+            
+        }
     }
 }
 

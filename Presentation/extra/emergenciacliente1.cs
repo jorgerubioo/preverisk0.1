@@ -9,12 +9,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Presentation.Client
+namespace Presentation.extra
 {
-    public partial class emergenciacliente : Form
+    public partial class emergenciacliente1 : Form
     {
         CN_EmergenciaClient objetoemecn = new CN_EmergenciaClient();
-        public emergenciacliente()
+        public emergenciacliente1()
         {
             InitializeComponent();
         }
@@ -32,6 +32,11 @@ namespace Presentation.Client
 
         }
         private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
         {
             this.Close();
         }
