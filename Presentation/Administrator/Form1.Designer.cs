@@ -303,7 +303,7 @@
             this.label8.Size = new System.Drawing.Size(195, 23);
             this.label8.TabIndex = 18;
             this.label8.Text = "Listado de usuarios";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
+           
             // 
             // btnVolver
             // 

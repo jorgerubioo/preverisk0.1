@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Domain;
 using domains;
-using System.Security.Cryptography.X509Certificates;
+
 
 namespace Presentation.Administrator
 {
@@ -46,9 +46,31 @@ namespace Presentation.Administrator
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
+            try
+            {
+                txtResultadodiv.Text = "El indice de accidentabilidad es: " + Int32.Parse(txtNtrabajadores.Text) / Int32.Parse(txtNaccidentes.Text) + "%";
+                limpiarForm();
+            }
 
-            txtResultadodiv.Text = "El indice de accidentabilidad es: "+Int32.Parse(txtNtrabajadores.Text) / Int32.Parse(txtNaccidentes.Text) + "%";
+            catch (FormatException)
+            {
+                MessageBox.Show("No es un número válido");
+            }
+            catch (DivideByZeroException)
+            {
+                MessageBox.Show("No se puede dividir entre cero");
+            }
+            
 
+        }
+
+        
+        //Metodo para limpiar campos
+        private void limpiarForm()
+        {
+            txtNaccidentes.Clear();
+            txtNtrabajadores.Clear();
+            
         }
     }
 }
