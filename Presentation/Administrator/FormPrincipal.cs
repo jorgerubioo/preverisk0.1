@@ -177,7 +177,7 @@ namespace Presentation.Administrator
         private void btnReporteGlobal_Click(object sender, EventArgs e)
         {
             AbrirFormulario<ReporteGlobal>();
-            button5.BackColor = Color.FromArgb(12, 61, 92);
+            btnReporteGlobal.BackColor = Color.FromArgb(12, 61, 92);
         }
 
 
