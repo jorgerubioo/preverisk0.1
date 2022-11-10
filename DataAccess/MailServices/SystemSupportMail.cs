@@ -10,10 +10,10 @@ namespace DataAccess.MailServices
     {
         public SystemSupportMail()
         {
-            senderMail = "recuperar.preverisk@gmail.com";
-            password = "jorgerubio";
-            host = "nsmtp.gmail.com";
-            port = 587;
+            senderMail = "noreply.preverisk@yahoo.com";
+            password = "juntosimpulsamos";
+            host = "smtp.mail.yahoo.com";
+            port = 25;
             ssl = true;
             initializeSmtpClient();
         }

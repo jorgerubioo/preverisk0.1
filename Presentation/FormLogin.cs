@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using Domain;
 using Common1.Cache;
+using Presentation;
+
 
 
 namespace Presentation
@@ -125,7 +127,7 @@ namespace Presentation
                             this.Hide();
                             Welcome welcome = new Welcome();
                             welcome.ShowDialog();
-                            Professional.MenuProfessional mainMenu = new Professional.MenuProfessional();
+                            Professional.MenuPro mainMenu = new Professional.MenuPro();
                             mainMenu.Show();
                             mainMenu.FormClosed += Logout;
 
@@ -137,8 +139,11 @@ namespace Presentation
                             this.Hide();
                             Welcome welcome = new Welcome();
                             welcome.ShowDialog();
-                            //Client.MenuClient mainMenu = new Client.MenuClient();
-                            extra.excliente1 mainMenu = new extra.excliente1();
+                           
+                        
+                           extra.PrincipalClient mainMenu = new extra.PrincipalClient();
+                           
+                           
                             mainMenu.Show();
                             mainMenu.FormClosed += Logout;
 

@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Common1.Cache;
+using Presentation.Professional;
 
 namespace Presentation.extra
 {
@@ -141,7 +142,7 @@ namespace Presentation.extra
             //..
             var emergenciacliente1 = new emergenciacliente1();
             emergenciacliente1.ShowDialog();
-            button3.BackColor = Color.FromArgb(12, 61, 92);
+            
         }
 
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]

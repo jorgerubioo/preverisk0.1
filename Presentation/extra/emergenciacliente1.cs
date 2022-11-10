@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Presentation.extra
 {
@@ -21,15 +22,20 @@ namespace Presentation.extra
 
         private void btnemergencia_Click(object sender, EventArgs e)
         {
+            if (String.IsNullOrEmpty(txtTelefono.Text))
+            {
+                MessageBox.Show("Por favor Ingrese un numero de telefono para poder contactarlo");
+            } else {
             try { 
             objetoemecn.InsertarEme(txtTelefono.Text, txtDesEme.Text);
             MessageBox.Show("Emergencia ingresada correctamente, la respuesta será lo antes posible");
+                    this.Close();
             }
             catch(Exception ex)
             {
                 MessageBox.Show("No se pudo ingresar la emergencia por: " + ex);
             }
-
+            }
         }
         private void pictureBox2_Click(object sender, EventArgs e)
         {

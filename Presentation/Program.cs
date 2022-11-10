@@ -1,5 +1,4 @@
-﻿using PlayerUI;
-using Presentation.Administrator;
+﻿using Presentation.Administrator;
 using Presentation.extra;
 using Presentation.Professional;
 using System;
@@ -20,7 +19,7 @@ namespace Presentation
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PrincipalClient());
+            Application.Run(new FormLogin());
 
 
 

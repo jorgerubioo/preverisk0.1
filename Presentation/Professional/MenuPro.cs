@@ -9,27 +9,24 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Common1.Cache;
-using Presentation.Professional;
-
 
 namespace Presentation.Professional
 {
-    public partial class MenuProfessional : Form
+    public partial class MenuPro : Form
     {
-        public MenuProfessional()
+        public MenuPro()
         {
             InitializeComponent();
+
             //Agregar metodo en el formulario para mostrar datos de usuarios
             LoadUserData();
-
-
         }
 
         private void LoadUserData()
         {
-            lblnombrepro.Text = UserLoginCache.firstName + " " + UserLoginCache.lastName;
-            lblrolpro.Text = UserLoginCache.position;
-            lblemailpro.Text = UserLoginCache.email;
+            lblname.Text = UserLoginCache.firstName + " " + UserLoginCache.lastName;
+            lblposition.Text = UserLoginCache.position;
+            lblEmail.Text = UserLoginCache.email;
         }
 
 
@@ -81,7 +78,14 @@ namespace Presentation.Professional
             ControlPaint.DrawSizeGrip(e.Graphics, Color.Transparent, sizeGripRectangle);
         }
 
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Estas segur@ que desea cerrar la aplicación?", "Advertencia",
+               MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
 
+                Application.Exit();
+            
+        }
         //Capturar posicion y tamaño antes de maximizar para restaurar
         int lx, ly;
         int sw, sh;
@@ -92,9 +96,17 @@ namespace Presentation.Professional
             sw = this.Size.Width;
             sh = this.Size.Height;
             btnMaximizar.Visible = false;
-            btnrestaurarpro.Visible = true;
+            btnRestaurar. Visible = true;
             this.Size = Screen.PrimaryScreen.WorkingArea.Size;
             this.Location = Screen.PrimaryScreen.WorkingArea.Location;
+        }
+
+        private void btnRestaurar_Click(object sender, EventArgs e)
+        {
+            btnMaximizar.Visible = true ;
+            btnRestaurar.Visible = false;
+            this.Size = new Size(sw,sh);
+            this.Location = new Point(lx,ly);
         }
 
         private void panelBarraTitulo_MouseMove(object sender, MouseEventArgs e)
@@ -114,21 +126,11 @@ namespace Presentation.Professional
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //AbrirFormulario<Form1>();
-            btnasesoriapro.BackColor = Color.FromArgb(12, 61, 92);
+            AbrirFormulario<Asesorias>();
+            button5.BackColor = Color.FromArgb(12, 61, 92);
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            //AbrirFormulario<Form2>();
-            button2.BackColor = Color.FromArgb(12, 61, 92);
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            //AbrirFormulario<Form2>();
-            button3.BackColor = Color.FromArgb(12, 61, 92);
-        }
+       
 
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
@@ -141,93 +143,20 @@ namespace Presentation.Professional
                 this.Close();
             Presentation.FormLogin mainMenu = new Presentation.FormLogin();
             mainMenu.Show();
-
+          
 
         }
-        //Presente
+
         private void horaFecha_Tick(object sender, EventArgs e)
         {
-            lblhorap.Text = DateTime.Now.ToLongTimeString();
-            lblfechap.Text = DateTime.Now.ToLongDateString();
+            lblHora.Text = DateTime.Now.ToLongTimeString();
+            lblFecha.Text = DateTime.Now.ToLongDateString();
         }
 
+        
+       
 
-        private void btnSlide_Click(object sender, EventArgs e)
-        {
-            //boton para minimizar panel menu
-            if (panelMenu.Width == 169)
-            {
-                panelMenu.Width = 54;
-            }
-            else
-                panelMenu.Width = 169;
-        }
-
-        private void lblname_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnasesoriapro_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario<Asesorias>();
-            btnasesoriapro.BackColor = Color.FromArgb(12, 61, 92);
-        }
-
-        private void btncerrarpro_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("¿Estas segur@ que desea cerrar la aplicación?", "Advertencia",
-            MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
-
-            Application.Exit();
-
-        }
-
-        private void btnrestaurarpro_Click(object sender, EventArgs e)
-        {
-            btnMaximizar.Visible = true;
-            btnrestaurarpro.Visible = false;
-            this.Size = new Size(sw, sh);
-            this.Location = new Point(lx, ly);
-        }
-
-        private void Btnslideclientpro_Click(object sender, EventArgs e)
-        {
-            //boton para minimizar panel menu
-            if (panelMenu.Width == 169)
-            {
-                panelMenu.Width = 54;
-            }
-            else
-                panelMenu.Width = 169;
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            lblhorap.Text = DateTime.Now.ToLongTimeString();
-            lblfechap.Text = DateTime.Now.ToLongDateString();
-        }
-
-        private void btnLogout_Click_1(object sender, EventArgs e)
-        {
-            //corregir opcion de "NO"
-            if (MessageBox.Show("¿Estas segur@ de cerrar sesión?", "Advertencia",
-                MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
-                this.Close();
-            Presentation.FormLogin mainMenu = new Presentation.FormLogin();
-            mainMenu.Show();
-
-        }
-
-
-
-
-
+        
 
 
 
@@ -235,8 +164,7 @@ namespace Presentation.Professional
 
         #endregion
         //METODO PARA ABRIR FORMULARIOS DENTRO DEL PANEL
-        private void AbrirFormulario<MiForm>() where MiForm : Form, new()
-        {
+        private void AbrirFormulario<MiForm>() where MiForm : Form, new() {
             Form formulario;
             formulario = panelformularios.Controls.OfType<MiForm>().FirstOrDefault();//Busca en la colecion el formulario
             //si el formulario/instancia no existe
@@ -250,22 +178,17 @@ namespace Presentation.Professional
                 panelformularios.Tag = formulario;
                 formulario.Show();
                 formulario.BringToFront();
-                formulario.FormClosed += new FormClosedEventHandler(CloseForms);
+                formulario.FormClosed += new FormClosedEventHandler(CloseForms );
             }
             //si el formulario/instancia existe
-            else
-            {
+            else {
                 formulario.BringToFront();
             }
         }
-        private void CloseForms(object sender, FormClosedEventArgs e)
-        {
+        private void CloseForms(object sender,FormClosedEventArgs e) {
             if (Application.OpenForms["Form1"] == null)
-                btnasesoriapro.BackColor = Color.FromArgb(4, 41, 68);
-            if (Application.OpenForms["Form2"] == null)
-                button2.BackColor = Color.FromArgb(4, 41, 68);
-            if (Application.OpenForms["Form3"] == null)
-                button3.BackColor = Color.FromArgb(4, 41, 68);
+                button5.BackColor = Color.FromArgb(4, 41, 68);
+            
         }
     }
 }

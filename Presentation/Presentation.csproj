@@ -126,11 +126,11 @@
     <Compile Include="Professional\Asesorias.Designer.cs">
       <DependentUpon>Asesorias.cs</DependentUpon>
     </Compile>
-    <Compile Include="Professional\MenuProfessional.cs">
+    <Compile Include="Professional\MenuPro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Professional\MenuProfessional.Designer.cs">
-      <DependentUpon>MenuProfessional.cs</DependentUpon>
+    <Compile Include="Professional\MenuPro.designer.cs">
+      <DependentUpon>MenuPro.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -176,8 +176,8 @@
     <EmbeddedResource Include="Professional\Asesorias.resx">
       <DependentUpon>Asesorias.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Professional\MenuProfessional.resx">
-      <DependentUpon>MenuProfessional.cs</DependentUpon>
+    <EmbeddedResource Include="Professional\MenuPro.resx">
+      <DependentUpon>MenuPro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -219,6 +219,8 @@
       <Name>Domain</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Cliente\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
