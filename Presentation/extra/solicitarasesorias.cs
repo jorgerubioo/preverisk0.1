@@ -12,10 +12,10 @@ using domains;
 
 namespace Presentation.extra
 {
-    public partial class excliente4 : Form
+    public partial class solicitarasesorias : Form
     {
         CN_Asesorias objetoCN = new CN_Asesorias();
-        public excliente4()
+        public solicitarasesorias()
         {
             InitializeComponent();
         }

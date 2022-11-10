@@ -2,7 +2,7 @@
 
 namespace Presentation.extra
 {
-    partial class excliente4
+    partial class solicitarasesorias
     {
         /// <summary>
         /// Required designer variable.

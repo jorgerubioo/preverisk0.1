@@ -96,29 +96,17 @@
     <Compile Include="extra\emergenciacliente1.Designer.cs">
       <DependentUpon>emergenciacliente1.cs</DependentUpon>
     </Compile>
-    <Compile Include="extra\excliente2.cs">
+    <Compile Include="extra\solicitarasesorias.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="extra\excliente2.designer.cs">
-      <DependentUpon>excliente2.cs</DependentUpon>
+    <Compile Include="extra\solicitarasesorias.Designer.cs">
+      <DependentUpon>solicitarasesorias.cs</DependentUpon>
     </Compile>
-    <Compile Include="extra\excliente3.cs">
+    <Compile Include="extra\PrincipalClient.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="extra\excliente3.designer.cs">
-      <DependentUpon>excliente3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="extra\excliente1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="extra\excliente1.designer.cs">
-      <DependentUpon>excliente1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="extra\excliente4.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="extra\excliente4.Designer.cs">
-      <DependentUpon>excliente4.cs</DependentUpon>
+    <Compile Include="extra\PrincipalClient.designer.cs">
+      <DependentUpon>PrincipalClient.cs</DependentUpon>
     </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
@@ -173,17 +161,11 @@
     <EmbeddedResource Include="extra\emergenciacliente1.resx">
       <DependentUpon>emergenciacliente1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="extra\excliente2.resx">
-      <DependentUpon>excliente2.cs</DependentUpon>
+    <EmbeddedResource Include="extra\solicitarasesorias.resx">
+      <DependentUpon>solicitarasesorias.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="extra\excliente3.resx">
-      <DependentUpon>excliente3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="extra\excliente1.resx">
-      <DependentUpon>excliente1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="extra\excliente4.resx">
-      <DependentUpon>excliente4.cs</DependentUpon>
+    <EmbeddedResource Include="extra\PrincipalClient.resx">
+      <DependentUpon>PrincipalClient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
