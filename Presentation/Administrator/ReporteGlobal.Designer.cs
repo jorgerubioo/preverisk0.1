@@ -59,6 +59,7 @@
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.btnVolver = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.chartCantidadSolicitudes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartAccidentabilidad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -137,7 +138,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(99)))), ((int)(((byte)(177)))));
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(33, 50);
+            this.pictureBox1.Location = new System.Drawing.Point(33, 95);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(166, 77);
             this.pictureBox1.TabIndex = 2;
@@ -147,7 +148,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(68)))));
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(35, 30);
+            this.pictureBox2.Location = new System.Drawing.Point(35, 75);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(41, 46);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -159,7 +160,7 @@
             this.lblTotalUser.AutoSize = true;
             this.lblTotalUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(99)))), ((int)(((byte)(177)))));
             this.lblTotalUser.ForeColor = System.Drawing.Color.White;
-            this.lblTotalUser.Location = new System.Drawing.Point(99, 93);
+            this.lblTotalUser.Location = new System.Drawing.Point(99, 138);
             this.lblTotalUser.Name = "lblTotalUser";
             this.lblTotalUser.Size = new System.Drawing.Size(44, 16);
             this.lblTotalUser.TabIndex = 4;
@@ -172,7 +173,7 @@
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(79, 60);
+            this.label1.Location = new System.Drawing.Point(79, 105);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(109, 16);
             this.label1.TabIndex = 5;
@@ -184,7 +185,7 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(99)))), ((int)(((byte)(177)))));
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(285, 60);
+            this.label2.Location = new System.Drawing.Point(285, 105);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(90, 16);
             this.label2.TabIndex = 9;
@@ -195,7 +196,7 @@
             this.lbltotaladmin.AutoSize = true;
             this.lbltotaladmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(99)))), ((int)(((byte)(177)))));
             this.lbltotaladmin.ForeColor = System.Drawing.Color.White;
-            this.lbltotaladmin.Location = new System.Drawing.Point(302, 93);
+            this.lbltotaladmin.Location = new System.Drawing.Point(302, 138);
             this.lbltotaladmin.Name = "lbltotaladmin";
             this.lbltotaladmin.Size = new System.Drawing.Size(44, 16);
             this.lbltotaladmin.TabIndex = 8;
@@ -205,7 +206,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(68)))));
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(238, 30);
+            this.pictureBox3.Location = new System.Drawing.Point(238, 75);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(41, 46);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -216,7 +217,7 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(99)))), ((int)(((byte)(177)))));
             this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox4.Location = new System.Drawing.Point(236, 50);
+            this.pictureBox4.Location = new System.Drawing.Point(236, 95);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(155, 77);
             this.pictureBox4.TabIndex = 6;
@@ -228,7 +229,7 @@
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(99)))), ((int)(((byte)(177)))));
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(478, 60);
+            this.label4.Location = new System.Drawing.Point(478, 105);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(86, 16);
             this.label4.TabIndex = 13;
@@ -239,7 +240,7 @@
             this.lbltotalclient.AutoSize = true;
             this.lbltotalclient.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(99)))), ((int)(((byte)(177)))));
             this.lbltotalclient.ForeColor = System.Drawing.Color.White;
-            this.lbltotalclient.Location = new System.Drawing.Point(495, 93);
+            this.lbltotalclient.Location = new System.Drawing.Point(495, 138);
             this.lbltotalclient.Name = "lbltotalclient";
             this.lbltotalclient.Size = new System.Drawing.Size(44, 16);
             this.lbltotalclient.TabIndex = 12;
@@ -249,7 +250,7 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(68)))));
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(431, 30);
+            this.pictureBox5.Location = new System.Drawing.Point(431, 75);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(41, 46);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -260,7 +261,7 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(99)))), ((int)(((byte)(177)))));
             this.pictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox6.Location = new System.Drawing.Point(455, 50);
+            this.pictureBox6.Location = new System.Drawing.Point(455, 95);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(155, 77);
             this.pictureBox6.TabIndex = 10;
@@ -272,7 +273,7 @@
             this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(99)))), ((int)(((byte)(177)))));
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(710, 60);
+            this.label6.Location = new System.Drawing.Point(710, 105);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(126, 16);
             this.label6.TabIndex = 17;
@@ -283,7 +284,7 @@
             this.lbltotalprof.AutoSize = true;
             this.lbltotalprof.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(99)))), ((int)(((byte)(177)))));
             this.lbltotalprof.ForeColor = System.Drawing.Color.White;
-            this.lbltotalprof.Location = new System.Drawing.Point(713, 93);
+            this.lbltotalprof.Location = new System.Drawing.Point(713, 138);
             this.lbltotalprof.Name = "lbltotalprof";
             this.lbltotalprof.Size = new System.Drawing.Size(44, 16);
             this.lbltotalprof.TabIndex = 16;
@@ -293,7 +294,7 @@
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(68)))));
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(649, 30);
+            this.pictureBox7.Location = new System.Drawing.Point(649, 75);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(41, 46);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -304,7 +305,7 @@
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(99)))), ((int)(((byte)(177)))));
             this.pictureBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox8.Location = new System.Drawing.Point(647, 50);
+            this.pictureBox8.Location = new System.Drawing.Point(647, 95);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(199, 77);
             this.pictureBox8.TabIndex = 14;
@@ -316,7 +317,7 @@
             this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(99)))), ((int)(((byte)(177)))));
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(916, 60);
+            this.label8.Location = new System.Drawing.Point(916, 105);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(117, 16);
             this.label8.TabIndex = 21;
@@ -327,7 +328,7 @@
             this.lblTotalempresas.AutoSize = true;
             this.lblTotalempresas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(99)))), ((int)(((byte)(177)))));
             this.lblTotalempresas.ForeColor = System.Drawing.Color.White;
-            this.lblTotalempresas.Location = new System.Drawing.Point(923, 93);
+            this.lblTotalempresas.Location = new System.Drawing.Point(923, 138);
             this.lblTotalempresas.Name = "lblTotalempresas";
             this.lblTotalempresas.Size = new System.Drawing.Size(44, 16);
             this.lblTotalempresas.TabIndex = 20;
@@ -337,7 +338,7 @@
             // 
             this.pictureBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(68)))));
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(869, 30);
+            this.pictureBox9.Location = new System.Drawing.Point(869, 75);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(41, 46);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -348,7 +349,7 @@
             // 
             this.pictureBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(99)))), ((int)(((byte)(177)))));
             this.pictureBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox10.Location = new System.Drawing.Point(869, 50);
+            this.pictureBox10.Location = new System.Drawing.Point(869, 95);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(175, 77);
             this.pictureBox10.TabIndex = 18;
@@ -376,12 +377,27 @@
             this.label5.TabIndex = 23;
             this.label5.Text = "Indice de accidentabilidad";
             // 
+            // btnVolver
+            // 
+            this.btnVolver.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(99)))), ((int)(((byte)(177)))));
+            this.btnVolver.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(99)))), ((int)(((byte)(177)))));
+            this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnVolver.ForeColor = System.Drawing.Color.White;
+            this.btnVolver.Location = new System.Drawing.Point(35, 12);
+            this.btnVolver.Name = "btnVolver";
+            this.btnVolver.Size = new System.Drawing.Size(86, 40);
+            this.btnVolver.TabIndex = 24;
+            this.btnVolver.Text = "Volver";
+            this.btnVolver.UseVisualStyleBackColor = false;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
+            // 
             // ReporteGlobal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(72)))), ((int)(((byte)(101)))));
             this.ClientSize = new System.Drawing.Size(1282, 603);
+            this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label8);
@@ -452,5 +468,6 @@
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btnVolver;
     }
 }

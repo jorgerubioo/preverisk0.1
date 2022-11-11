@@ -72,5 +72,10 @@ namespace Presentation.Administrator
             txtNtrabajadores.Clear();
             
         }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

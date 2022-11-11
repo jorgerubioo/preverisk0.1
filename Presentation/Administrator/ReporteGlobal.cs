@@ -106,7 +106,10 @@ namespace Presentation.Administrator
             Conexion.Close();
         }
 
-      
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
         }
     
