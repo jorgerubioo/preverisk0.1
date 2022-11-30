@@ -52,6 +52,7 @@
             this.btnMaximizar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.horaFecha = new System.Windows.Forms.Timer(this.components);
+            this.linklabel = new System.Windows.Forms.LinkLabel();
             this.panelContenedor.SuspendLayout();
             this.panelformularios.SuspendLayout();
             this.panelAbajo.SuspendLayout();
@@ -183,6 +184,7 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(68)))));
+            this.panelMenu.Controls.Add(this.linklabel);
             this.panelMenu.Controls.Add(this.btnLogout);
             this.panelMenu.Controls.Add(this.pictureBox2);
             this.panelMenu.Controls.Add(this.button3);
@@ -355,6 +357,23 @@
             this.horaFecha.Enabled = true;
             this.horaFecha.Tick += new System.EventHandler(this.horaFecha_Tick);
             // 
+            // linklabel
+            // 
+            this.linklabel.ActiveLinkColor = System.Drawing.SystemColors.ActiveCaption;
+            this.linklabel.AutoSize = true;
+            this.linklabel.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linklabel.Image = ((System.Drawing.Image)(resources.GetObject("linklabel.Image")));
+            this.linklabel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.linklabel.LinkColor = System.Drawing.Color.White;
+            this.linklabel.Location = new System.Drawing.Point(38, 522);
+            this.linklabel.Name = "linklabel";
+            this.linklabel.Size = new System.Drawing.Size(90, 21);
+            this.linklabel.TabIndex = 7;
+            this.linklabel.TabStop = true;
+            this.linklabel.Tag = "0";
+            this.linklabel.Text = "      Pagar";
+            this.linklabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkpass_LinkClicked);
+            // 
             // PrincipalClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -375,6 +394,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelMenu.ResumeLayout(false);
+            this.panelMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panelBarraTitulo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).EndInit();
@@ -409,6 +429,7 @@
         private System.Windows.Forms.Label lblFecha;
         private System.Windows.Forms.Label lblHora;
         private System.Windows.Forms.Timer horaFecha;
+        private System.Windows.Forms.LinkLabel linklabel;
     }
 }
 

@@ -85,7 +85,7 @@ namespace Presentation.extra
                MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
 
                 Application.Exit();
-            
+
         }
         //Capturar posicion y tamaño antes de maximizar para restaurar
         int lx, ly;
@@ -97,17 +97,17 @@ namespace Presentation.extra
             sw = this.Size.Width;
             sh = this.Size.Height;
             btnMaximizar.Visible = false;
-            btnRestaurar. Visible = true;
+            btnRestaurar.Visible = true;
             this.Size = Screen.PrimaryScreen.WorkingArea.Size;
             this.Location = Screen.PrimaryScreen.WorkingArea.Location;
         }
 
         private void btnRestaurar_Click(object sender, EventArgs e)
         {
-            btnMaximizar.Visible = true ;
+            btnMaximizar.Visible = true;
             btnRestaurar.Visible = false;
-            this.Size = new Size(sw,sh);
-            this.Location = new Point(lx,ly);
+            this.Size = new Size(sw, sh);
+            this.Location = new Point(lx, ly);
         }
 
         private void panelBarraTitulo_MouseMove(object sender, MouseEventArgs e)
@@ -142,7 +142,7 @@ namespace Presentation.extra
             //..
             var emergenciacliente1 = new emergenciacliente1();
             emergenciacliente1.ShowDialog();
-            
+
         }
 
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
@@ -156,7 +156,7 @@ namespace Presentation.extra
                 this.Close();
             Presentation.FormLogin mainMenu = new Presentation.FormLogin();
             mainMenu.Show();
-          
+
 
         }
 
@@ -166,10 +166,36 @@ namespace Presentation.extra
             lblFecha.Text = DateTime.Now.ToLongDateString();
         }
 
-        
-      
+       
+        private void linkpass_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            {
+                try
+                {
+                    VisitLink();
+                }
+                catch (Exception ex1)
+                {
+                    MessageBox.Show("Unable to open link that was clicked.");
+                }
+            }
+        }
 
+        private void VisitLink()
+            {
+                // Change the color of the link text by setting LinkVisited
+                // to true.
+                linklabel.LinkVisited = true;
+                //Call the Process.Start method to open the default browser
+                //with a URL:
+                System.Diagnostics.Process.Start("https://localhost:44325/Acceso/Login");
+            }
         
+
+
+
+
+
 
 
 
