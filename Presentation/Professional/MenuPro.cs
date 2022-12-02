@@ -153,10 +153,16 @@ namespace Presentation.Professional
             lblFecha.Text = DateTime.Now.ToLongDateString();
         }
 
-        
-       
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            AbrirFormulario<Actividades>();
+            button1.BackColor = Color.FromArgb(12, 61, 92);
+        }
 
-        
+
+
+
+
 
 
 

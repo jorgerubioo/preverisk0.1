@@ -129,7 +129,7 @@ namespace Presentation.Administrator
 
         private void button1_Click(object sender, EventArgs e)
         {
-            AbrirFormulario<Form1>();
+            AbrirFormulario<Actividades>();
             button5.BackColor = Color.FromArgb(12, 61, 92);
         }
 

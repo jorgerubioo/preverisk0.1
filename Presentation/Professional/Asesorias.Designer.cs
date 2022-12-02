@@ -110,6 +110,7 @@
             this.txtFecha.Size = new System.Drawing.Size(170, 22);
             this.txtFecha.TabIndex = 42;
             this.txtFecha.Text = "pendiente";
+            this.txtFecha.TextChanged += new System.EventHandler(this.txtFecha_TextChanged);
             // 
             // label7
             // 

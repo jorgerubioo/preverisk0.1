@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CN_Accidentabilidad.cs" />
+    <Compile Include="CN_Actividad.cs" />
     <Compile Include="CN_Asesorias.cs" />
     <Compile Include="CN_EmergenciaClient.cs" />
     <Compile Include="CN_ProfAseso.cs" />

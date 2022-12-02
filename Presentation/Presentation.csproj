@@ -126,6 +126,12 @@
     <Compile Include="Professional\Asesorias.Designer.cs">
       <DependentUpon>Asesorias.cs</DependentUpon>
     </Compile>
+    <Compile Include="Professional\Actividades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Professional\Actividades.Designer.cs">
+      <DependentUpon>Actividades.cs</DependentUpon>
+    </Compile>
     <Compile Include="Professional\MenuPro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,6 +181,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Professional\Asesorias.resx">
       <DependentUpon>Asesorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Professional\Actividades.resx">
+      <DependentUpon>Actividades.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Professional\MenuPro.resx">
       <DependentUpon>MenuPro.cs</DependentUpon>

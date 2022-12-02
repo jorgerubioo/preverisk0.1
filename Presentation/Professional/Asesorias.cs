@@ -86,5 +86,10 @@ namespace Presentation.Professional
         {
             this.Close();
         }
+
+        private void txtFecha_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
