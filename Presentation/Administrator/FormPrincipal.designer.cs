@@ -41,6 +41,7 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.btnReporteGlobal = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
@@ -52,7 +53,7 @@
             this.btnMaximizar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.horaFecha = new System.Windows.Forms.Timer(this.components);
-            this.btnReporteGlobal = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panelContenedor.SuspendLayout();
             this.panelformularios.SuspendLayout();
             this.panelAbajo.SuspendLayout();
@@ -184,6 +185,7 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(68)))));
+            this.panelMenu.Controls.Add(this.button1);
             this.panelMenu.Controls.Add(this.btnReporteGlobal);
             this.panelMenu.Controls.Add(this.btnLogout);
             this.panelMenu.Controls.Add(this.pictureBox2);
@@ -196,6 +198,25 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(170, 622);
             this.panelMenu.TabIndex = 1;
+            // 
+            // btnReporteGlobal
+            // 
+            this.btnReporteGlobal.FlatAppearance.BorderSize = 0;
+            this.btnReporteGlobal.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
+            this.btnReporteGlobal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btnReporteGlobal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReporteGlobal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReporteGlobal.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnReporteGlobal.Image = ((System.Drawing.Image)(resources.GetObject("btnReporteGlobal.Image")));
+            this.btnReporteGlobal.Location = new System.Drawing.Point(8, 401);
+            this.btnReporteGlobal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnReporteGlobal.Name = "btnReporteGlobal";
+            this.btnReporteGlobal.Size = new System.Drawing.Size(157, 49);
+            this.btnReporteGlobal.TabIndex = 5;
+            this.btnReporteGlobal.Text = "Reporte Global";
+            this.btnReporteGlobal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnReporteGlobal.UseVisualStyleBackColor = true;
+            this.btnReporteGlobal.Click += new System.EventHandler(this.btnReporteGlobal_Click);
             // 
             // btnLogout
             // 
@@ -277,7 +298,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(140, 49);
             this.button5.TabIndex = 0;
-            this.button5.Text = "     Gestion";
+            this.button5.Text = "     Usuarios";
             this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button1_Click);
@@ -359,24 +380,24 @@
             this.horaFecha.Enabled = true;
             this.horaFecha.Tick += new System.EventHandler(this.horaFecha_Tick);
             // 
-            // btnReporteGlobal
+            // button1
             // 
-            this.btnReporteGlobal.FlatAppearance.BorderSize = 0;
-            this.btnReporteGlobal.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
-            this.btnReporteGlobal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.btnReporteGlobal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReporteGlobal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReporteGlobal.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnReporteGlobal.Image = ((System.Drawing.Image)(resources.GetObject("btnReporteGlobal.Image")));
-            this.btnReporteGlobal.Location = new System.Drawing.Point(8, 327);
-            this.btnReporteGlobal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnReporteGlobal.Name = "btnReporteGlobal";
-            this.btnReporteGlobal.Size = new System.Drawing.Size(140, 49);
-            this.btnReporteGlobal.TabIndex = 5;
-            this.btnReporteGlobal.Text = "Reporte Global";
-            this.btnReporteGlobal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnReporteGlobal.UseVisualStyleBackColor = true;
-            this.btnReporteGlobal.Click += new System.EventHandler(this.btnReporteGlobal_Click);
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Gainsboro;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(9, 339);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(140, 49);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "     Actividad";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_2);
             // 
             // FormPrincipal
             // 
@@ -433,6 +454,7 @@
         private System.Windows.Forms.Label lblHora;
         private System.Windows.Forms.Timer horaFecha;
         private System.Windows.Forms.Button btnReporteGlobal;
+        private System.Windows.Forms.Button button1;
     }
 }
 

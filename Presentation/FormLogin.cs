@@ -11,8 +11,7 @@ using System.Runtime.InteropServices;
 using Domain;
 using Common1.Cache;
 using Presentation;
-
-
+using domains.DataAccess.SqlServer;
 
 namespace Presentation
 {//test
@@ -104,7 +103,7 @@ namespace Presentation
                 if (txtuser.Text != "CONTRASEÑA")
                 {
                     UserModel user = new UserModel();
-                    var validLogin = user.LoginUser(txtuser.Text,txtpass.Text);
+                    var validLogin = user.LoginUser(txtuser.Text,Encrypt.GetSHA256(txtpass.Text));
                     if (validLogin == true)
                     {
                         if (UserLoginCache.position==Positions.Administrator)

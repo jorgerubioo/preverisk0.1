@@ -129,8 +129,8 @@ namespace Presentation.Administrator
 
         private void button1_Click(object sender, EventArgs e)
         {
-            AbrirFormulario<Actividades>();
-            button5.BackColor = Color.FromArgb(12, 61, 92);
+            AbrirFormulario<Form1>();
+            button1.BackColor = Color.FromArgb(12, 61, 92);
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -178,6 +178,12 @@ namespace Presentation.Administrator
         {
             AbrirFormulario<ReporteGlobal>();
             btnReporteGlobal.BackColor = Color.FromArgb(12, 61, 92);
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            AbrirFormulario<Actividades>();
+            button5.BackColor = Color.FromArgb(12, 61, 92);
         }
 
 

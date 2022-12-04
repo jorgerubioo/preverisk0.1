@@ -48,6 +48,7 @@
     <Compile Include="CN_EmergenciaClient.cs" />
     <Compile Include="CN_ProfAseso.cs" />
     <Compile Include="CN_Usuarios.cs" />
+    <Compile Include="Encrypt.cs" />
     <Compile Include="UserModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
