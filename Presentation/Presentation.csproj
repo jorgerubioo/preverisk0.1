@@ -132,11 +132,21 @@
     <Compile Include="Professional\Actividades.Designer.cs">
       <DependentUpon>Actividades.cs</DependentUpon>
     </Compile>
+    <Compile Include="Professional\Bases.cs" />
+    <Compile Include="Professional\CONEXIONMAESTRA.cs" />
+    <Compile Include="Professional\Dasistencias.cs" />
+    <Compile Include="Professional\Lasistencias.cs" />
     <Compile Include="Professional\MenuPro.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Professional\MenuPro.designer.cs">
       <DependentUpon>MenuPro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Professional\TomarAsistencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Professional\TomarAsistencias.designer.cs">
+      <DependentUpon>TomarAsistencias.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -187,6 +197,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Professional\MenuPro.resx">
       <DependentUpon>MenuPro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Professional\TomarAsistencias.resx">
+      <DependentUpon>TomarAsistencias.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

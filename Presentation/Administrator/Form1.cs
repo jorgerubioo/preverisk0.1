@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -56,7 +57,7 @@ namespace Presentation.Administrator
             if (Editar == true)
             {
                 try{
-                    objetoCN.editarUsuario(txtUsuario.Text, Encrypt.GetSHA256(txtContraseña.Text), txtNombre.Text, txtApellido.Text, cmbRol.Text, txtEmail.Text, idUsuario);
+                    objetoCN.editarUsuario(txtUsuario.Text, txtContraseña.Text, txtNombre.Text, txtApellido.Text, cmbRol.Text, txtEmail.Text, idUsuario);
                     MessageBox.Show("Usuario editado correctamente");
                     MostrarUsuarios();
                     limpiarForm();
@@ -75,7 +76,9 @@ namespace Presentation.Administrator
             {
                 Editar = true;
                 txtUsuario.Text = dataGridView1.CurrentRow.Cells["LoginName"].Value.ToString();
-                Encrypt.GetSHA256( txtContraseña.Text = dataGridView1.CurrentRow.Cells["password"].Value.ToString());
+                txtContraseña.Text = dataGridView1.CurrentRow.Cells["password"].Value.ToString();
+                txtContraseña.Visible = false;
+                label2.Visible = false;
                 txtNombre.Text = dataGridView1.CurrentRow.Cells["firstName"].Value.ToString();
                 txtApellido.Text = dataGridView1.CurrentRow.Cells["lastName"].Value.ToString();
                 cmbRol.SelectedItem = dataGridView1.CurrentRow.Cells["position"].Value.ToString();

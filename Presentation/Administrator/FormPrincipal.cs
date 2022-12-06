@@ -186,6 +186,11 @@ namespace Presentation.Administrator
             button5.BackColor = Color.FromArgb(12, 61, 92);
         }
 
+        private void lblname_Click(object sender, EventArgs e)
+        {
+
+        }
+
 
 
 
