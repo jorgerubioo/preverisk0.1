@@ -46,11 +46,16 @@ namespace Presentation.Professional
             
             Lasistencias parametros = new Lasistencias();
             Dasistencias funcion = new Dasistencias();
+           
             parametros.UserID = UserLoginCache.UserID;
             parametros.Fecha_salida = DateTime.Now;
             lbluser1.Text = UserLoginCache.firstName + UserLoginCache.lastName;
+
             parametros.Horas = Bases.DateDiff(Bases.DateInterval.Hour, fechaReg, DateTime.Now);
-            if(funcion.ConfirmarSalida(parametros)==true)
+
+          
+         
+            if (funcion.ConfirmarSalida(parametros)==true)
             {
                 txtaviso.Text = "SALIDA REGISTRADA";
               

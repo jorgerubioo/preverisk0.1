@@ -54,6 +54,7 @@
             this.btnMaximizar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.horaFecha = new System.Windows.Forms.Timer(this.components);
+            this.btnasistencia = new System.Windows.Forms.Button();
             this.panelContenedor.SuspendLayout();
             this.panelformularios.SuspendLayout();
             this.panelAbajo.SuspendLayout();
@@ -186,6 +187,7 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(68)))));
+            this.panelMenu.Controls.Add(this.btnasistencia);
             this.panelMenu.Controls.Add(this.button1);
             this.panelMenu.Controls.Add(this.btnReporteGlobal);
             this.panelMenu.Controls.Add(this.btnLogout);
@@ -400,6 +402,25 @@
             this.horaFecha.Enabled = true;
             this.horaFecha.Tick += new System.EventHandler(this.horaFecha_Tick);
             // 
+            // btnasistencia
+            // 
+            this.btnasistencia.FlatAppearance.BorderSize = 0;
+            this.btnasistencia.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
+            this.btnasistencia.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btnasistencia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnasistencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnasistencia.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnasistencia.Image = ((System.Drawing.Image)(resources.GetObject("btnasistencia.Image")));
+            this.btnasistencia.Location = new System.Drawing.Point(3, 454);
+            this.btnasistencia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnasistencia.Name = "btnasistencia";
+            this.btnasistencia.Size = new System.Drawing.Size(157, 49);
+            this.btnasistencia.TabIndex = 7;
+            this.btnasistencia.Text = "Asistencia";
+            this.btnasistencia.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnasistencia.UseVisualStyleBackColor = true;
+            this.btnasistencia.Click += new System.EventHandler(this.button4_Click);
+            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -456,6 +477,7 @@
         private System.Windows.Forms.Timer horaFecha;
         private System.Windows.Forms.Button btnReporteGlobal;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnasistencia;
     }
 }
 

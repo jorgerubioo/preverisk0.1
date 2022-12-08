@@ -47,6 +47,7 @@
     <Compile Include="SqlServer\CD_Accidentabilidad.cs" />
     <Compile Include="SqlServer\CD_Actividad.cs" />
     <Compile Include="SqlServer\CD_Asesorias.cs" />
+    <Compile Include="SqlServer\CD_AsistenciaAdmin.cs" />
     <Compile Include="SqlServer\CD_ProfAseso.cs" />
     <Compile Include="SqlServer\CD_Usuarios.cs" />
     <Compile Include="SqlServer\ConnectionToSql.cs" />

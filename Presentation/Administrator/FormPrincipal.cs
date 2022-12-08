@@ -191,6 +191,12 @@ namespace Presentation.Administrator
 
         }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<Asistencia>();
+            btnasistencia.BackColor = Color.FromArgb(12, 61, 92);
+        }
+
 
 
 

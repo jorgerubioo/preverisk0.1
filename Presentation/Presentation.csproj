@@ -60,6 +60,12 @@
     <Compile Include="Administrator\Accidentabilidad.Designer.cs">
       <DependentUpon>Accidentabilidad.cs</DependentUpon>
     </Compile>
+    <Compile Include="Administrator\Asistencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\Asistencia.Designer.cs">
+      <DependentUpon>Asistencia.cs</DependentUpon>
+    </Compile>
     <Compile Include="Administrator\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,6 +164,9 @@
     </Compile>
     <EmbeddedResource Include="Administrator\Accidentabilidad.resx">
       <DependentUpon>Accidentabilidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\Asistencia.resx">
+      <DependentUpon>Asistencia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Administrator\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

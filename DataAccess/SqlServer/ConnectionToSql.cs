@@ -9,9 +9,10 @@ using System.Data;
 
 namespace DataAccess
 {
+
     
 
-        public class ConnectionToSql
+    public class ConnectionToSql
         {
             private SqlConnection connectionString = new SqlConnection("Server=LAPTOP-VTLJ41I5\\SQLEXPRESS;DataBase= PortafolioTest; integrated security= true");
             public SqlConnection AbrirConexion()
@@ -30,5 +31,5 @@ namespace DataAccess
 
 
 
-    }
+}
 
