@@ -53,17 +53,35 @@ namespace Presentation.Administrator
         {
 
         }
-       
-        
+
+
 
         private void btnbuscar_Click(object sender, EventArgs e)
         {
+            CN_AsistenciaAdmin objeto = new CN_AsistenciaAdmin();
+
+            dataGridView1.DataSource = objeto.Buscar(txtBuscar.Text);
            
 
 
 
 
+        }
 
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void txtBuscar_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRefrescar_Click(object sender, EventArgs e)
+        {
+            txtBuscar.Clear();
+            MostrarAsistencia();
         }
     }
 }

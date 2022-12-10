@@ -29,5 +29,22 @@ namespace DataAccess.SqlServer
                 return tabla;
 
             }
+
+         public DataTable Buscar(string userID)
+        {
+
+                comando.Connection = conexion.AbrirConexion();
+                comando.CommandText = "BuscarAsistencia";
+                comando.CommandType = CommandType.StoredProcedure;
+                comando.Parameters.AddWithValue("@userID", userID);
+                 leer = comando.ExecuteReader();
+               tabla.Load(leer);
+                      conexion.CerrarConexion();
+            return tabla;
+              
+
         }
-}
+    }
+    
+    }
+

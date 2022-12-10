@@ -21,5 +21,17 @@ namespace domains
             return tabla;
 
         }
+
+        public DataTable Buscar(string userID) 
+        {
+            DataTable tabla = new DataTable();
+           tabla = objetoCD.Buscar(userID);
+
+            return tabla;
+        }
+
+       
     }
 }
+
+
