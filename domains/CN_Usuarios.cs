@@ -36,5 +36,13 @@ namespace domains
         {
             objetoCD.EliminarUsuario(Convert.ToInt32(id));
         }
+
+        public DataTable MostrarProfessional()
+        {
+            DataTable tabla = new DataTable();
+            tabla = objetoCD.MostrarProfessional();
+            return tabla;
+
+        }
     }
 }

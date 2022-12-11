@@ -22,9 +22,9 @@ namespace Presentation.Administrator
     public partial class Asistencia : Form
     {
 
-        
 
 
+        CN_Usuarios objetoCN1 = new CN_Usuarios();
         CN_AsistenciaAdmin objetoCN = new CN_AsistenciaAdmin();
         private string idUsuario = null;
         
@@ -36,12 +36,19 @@ namespace Presentation.Administrator
         private void Asistencia_Load(object sender, EventArgs e)
         {
             MostrarAsistencia();
+            MostrarProfessional();
         }
 
         private void MostrarAsistencia()
         {
             CN_AsistenciaAdmin objeto = new CN_AsistenciaAdmin();
             dataGridView1.DataSource = objeto.MostrarAsistencia();
+        }
+
+        private void MostrarProfessional()
+        {
+            CN_Usuarios objeto = new CN_Usuarios();
+            dataGridView2.DataSource = objeto.MostrarProfessional();
         }
 
         private void btnVolver_Click(object sender, EventArgs e)

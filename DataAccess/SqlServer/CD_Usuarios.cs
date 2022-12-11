@@ -82,7 +82,20 @@ namespace DataAccess.SqlServer
 
             comando.Parameters.Clear();
             }
+
+        public DataTable MostrarProfessional()
+        {
+
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "MostrarProfessional";
+            comando.CommandType = CommandType.StoredProcedure;
+            leer = comando.ExecuteReader();
+            tabla.Load(leer);
+            conexion.CerrarConexion();
+            return tabla;
+
         }
+    }
 
 }
 
