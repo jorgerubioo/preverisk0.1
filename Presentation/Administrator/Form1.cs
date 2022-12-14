@@ -42,7 +42,7 @@ namespace Presentation.Administrator
         {
             if (Editar == false ) { 
             try { 
-            objetoCN.insertarUsuario(txtUsuario.Text, txtNombre.Text, txtApellido.Text, txtEmail.Text, txtContraseña.Text, cmbRol.Text, txtActivo.Text, txtFechaRegistro.Text);
+            objetoCN.insertarUsuario(txtUsuario.Text, txtNombre.Text, txtApellido.Text, txtEmail.Text, Encrypt.GetSHA256(txtContraseña.Text), cmbRol.Text, txtactivo.Text, txtFechaRegistro.Text);
 
             MessageBox.Show("Usuario ingresado correctamente");
             MostrarUsuarios();
@@ -57,7 +57,7 @@ namespace Presentation.Administrator
             if (Editar == true)
             {
                 try{
-                    objetoCN.editarUsuario(txtUsuario.Text, txtContraseña.Text, txtNombre.Text, txtApellido.Text, cmbRol.Text, txtEmail.Text, idUsuario);
+                    objetoCN.editarUsuario(txtUsuario.Text, txtNombre.Text, txtApellido.Text, txtEmail.Text, Encrypt.GetSHA256(txtContraseña.Text), cmbRol.Text, txtactivo.Text, txtFechaRegistro.Text, idUsuario);
                     MessageBox.Show("Usuario editado correctamente");
                     MostrarUsuarios();
                     limpiarForm();
@@ -76,13 +76,21 @@ namespace Presentation.Administrator
             {
                 Editar = true;
                 txtUsuario.Text = dataGridView1.CurrentRow.Cells["LoginName"].Value.ToString();
+                txtNombre.Text = dataGridView1.CurrentRow.Cells["firstName"].Value.ToString();
+                txtApellido.Text = dataGridView1.CurrentRow.Cells["lastName"].Value.ToString();
+                txtEmail.Text = dataGridView1.CurrentRow.Cells["email"].Value.ToString();
                 txtContraseña.Text = dataGridView1.CurrentRow.Cells["password"].Value.ToString();
                 txtContraseña.Visible = false;
                 label2.Visible = false;
-                txtNombre.Text = dataGridView1.CurrentRow.Cells["firstName"].Value.ToString();
-                txtApellido.Text = dataGridView1.CurrentRow.Cells["lastName"].Value.ToString();
-                cmbRol.SelectedItem = dataGridView1.CurrentRow.Cells["position"].Value.ToString();
-                txtEmail.Text = dataGridView1.CurrentRow.Cells["email"].Value.ToString();
+                cmbRol.SelectedItem = dataGridView1.CurrentRow.Cells["position"].Value.ToString(); 
+               
+                txtactivo.Text = dataGridView1.CurrentRow.Cells["Activo"].Value.ToString();
+                txtactivo.Visible = false;
+                txtFechaRegistro.Text = dataGridView1.CurrentRow.Cells["FechaRegistro"].Value.ToString();
+                txtFechaRegistro.Visible = false;
+
+
+
                 idUsuario = dataGridView1.CurrentRow.Cells["UserID"].Value.ToString();
 
             }
@@ -98,6 +106,9 @@ namespace Presentation.Administrator
             txtNombre.Clear();
             txtApellido.Clear();
            txtEmail.Clear();
+            txtactivo.Clear();
+            txtFechaRegistro.Clear();
+            
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)

@@ -26,9 +26,9 @@ namespace domains
             
     }
 
-        public void editarUsuario(string loginname, string password, string firstname, string lastname, string position, string email, string id)
+        public void editarUsuario(string loginname, string firstname, string lastname, string email, string password, string position, string Activo, string FechaRegistro, string id)
         {
-            objetoCD.Editar(loginname, password, firstname, lastname, position, email, Convert.ToInt32(id));
+            objetoCD.Editar(loginname, firstname, lastname, email, password, position, Activo, FechaRegistro, Convert.ToInt32(id));
         }
 
         public void eliminarUsuario(string id)

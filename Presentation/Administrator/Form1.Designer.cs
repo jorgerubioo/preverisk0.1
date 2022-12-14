@@ -47,14 +47,12 @@
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtFechaRegistro = new System.Windows.Forms.TextBox();
+            this.txtactivo = new System.Windows.Forms.TextBox();
             this.cmbRol = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.btnVolver = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.txtActivo = new System.Windows.Forms.Label();
-            this.txtFechaRegistro = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -253,9 +251,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
             this.panel1.Controls.Add(this.txtFechaRegistro);
-            this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.txtActivo);
+            this.panel1.Controls.Add(this.txtactivo);
             this.panel1.Controls.Add(this.cmbRol);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label1);
@@ -275,6 +271,22 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(407, 549);
             this.panel1.TabIndex = 18;
+            // 
+            // txtFechaRegistro
+            // 
+            this.txtFechaRegistro.Location = new System.Drawing.Point(180, 314);
+            this.txtFechaRegistro.Name = "txtFechaRegistro";
+            this.txtFechaRegistro.Size = new System.Drawing.Size(170, 22);
+            this.txtFechaRegistro.TabIndex = 22;
+            this.txtFechaRegistro.Visible = false;
+            // 
+            // txtactivo
+            // 
+            this.txtactivo.Location = new System.Drawing.Point(180, 286);
+            this.txtactivo.Name = "txtactivo";
+            this.txtactivo.Size = new System.Drawing.Size(170, 22);
+            this.txtactivo.TabIndex = 20;
+            this.txtactivo.Visible = false;
             // 
             // cmbRol
             // 
@@ -325,42 +337,6 @@
             this.btnVolver.UseVisualStyleBackColor = false;
             this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(180, 286);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(170, 22);
-            this.textBox1.TabIndex = 20;
-            // 
-            // txtActivo
-            // 
-            this.txtActivo.AutoSize = true;
-            this.txtActivo.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtActivo.ForeColor = System.Drawing.Color.White;
-            this.txtActivo.Location = new System.Drawing.Point(52, 285);
-            this.txtActivo.Name = "txtActivo";
-            this.txtActivo.Size = new System.Drawing.Size(71, 21);
-            this.txtActivo.TabIndex = 19;
-            this.txtActivo.Text = "Activo:";
-            // 
-            // txtFechaRegistro
-            // 
-            this.txtFechaRegistro.Location = new System.Drawing.Point(180, 314);
-            this.txtFechaRegistro.Name = "txtFechaRegistro";
-            this.txtFechaRegistro.Size = new System.Drawing.Size(170, 22);
-            this.txtFechaRegistro.TabIndex = 22;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(52, 313);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(132, 21);
-            this.label10.TabIndex = 21;
-            this.label10.Text = "FechaRegistro:";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -406,8 +382,6 @@
         private System.Windows.Forms.Button btnVolver;
         private System.Windows.Forms.ComboBox cmbRol;
         private System.Windows.Forms.TextBox txtFechaRegistro;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label txtActivo;
+        private System.Windows.Forms.TextBox txtactivo;
     }
 }

@@ -54,17 +54,19 @@ namespace DataAccess.SqlServer
 
 
         //editar registros con procedimiento almacenado
-        public void Editar(string loginname, string password, string firstname, string lastname, string position, string email, int id)
+        public void Editar(string loginname, string firstname, string lastname, string email, string password, string position, string Activo, string FechaRegistro, int id)
         {
             comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "EditarUsuarios";
+            comando.CommandText = "EditarUsuarios1";
             comando.CommandType = CommandType.StoredProcedure;
             comando.Parameters.AddWithValue("@loginname", loginname);
-            comando.Parameters.AddWithValue("@password", password);
             comando.Parameters.AddWithValue("@firstname", firstname);
             comando.Parameters.AddWithValue("@lastname", lastname);
-            comando.Parameters.AddWithValue("@position", position);
             comando.Parameters.AddWithValue("@email", email);
+            comando.Parameters.AddWithValue("@password", password);
+            comando.Parameters.AddWithValue("@position", position);
+            comando.Parameters.AddWithValue("@Activo", Activo);
+            comando.Parameters.AddWithValue("@FechaRegistro", FechaRegistro);
             comando.Parameters.AddWithValue("@id", id);
 
             comando.ExecuteNonQuery();
