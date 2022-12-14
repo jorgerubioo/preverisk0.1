@@ -9,7 +9,7 @@ namespace Presentation.Professional
 {
    public class CONEXIONMAESTRA
     {
-        public static string conexion = "Server=LAPTOP-VTLJ41I5\\SQLEXPRESS;DataBase= PortafolioTest; Integrated Security=true";
+        public static string conexion = "Server=LAPTOP-VTLJ41I5\\SQLEXPRESS;DataBase= test1; Integrated Security=true";
         public static SqlConnection conectar = new SqlConnection(conexion);
         public static void abrir()
         {

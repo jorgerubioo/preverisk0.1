@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using System.Net.Configuration;
+using Microsoft.SqlServer.Server;
 
 namespace DataAccess.SqlServer
 {
@@ -32,19 +33,20 @@ namespace DataAccess.SqlServer
             }
 
         //insertar registro con procedimiento almacenado
-        public void Insertar(string loginname, string password, string firstname, string lastname, string position, string email)
+        public void Insertar(string loginname, string firstname, string lastname, string email, string password, string position, string Activo, string FechaRegistro)
         {
 
             comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "InsertarUsuarios";
+            comando.CommandText = "InsertarUsuarios1";
             comando.CommandType = CommandType.StoredProcedure;
             comando.Parameters.AddWithValue("@loginname", loginname);
-            comando.Parameters.AddWithValue("@password", password);
             comando.Parameters.AddWithValue("@firstname", firstname);
             comando.Parameters.AddWithValue("@lastname", lastname);
-            comando.Parameters.AddWithValue("@position", position);
             comando.Parameters.AddWithValue("@email", email);
-
+            comando.Parameters.AddWithValue("@password", password);
+            comando.Parameters.AddWithValue("@position", position);
+            comando.Parameters.AddWithValue("@Activo", Activo);
+            comando.Parameters.AddWithValue("@FechaRegistro", FechaRegistro);
             comando.ExecuteNonQuery();
 
             comando.Parameters.Clear();

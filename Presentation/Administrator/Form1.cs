@@ -42,7 +42,7 @@ namespace Presentation.Administrator
         {
             if (Editar == false ) { 
             try { 
-            objetoCN.insertarUsuario(txtUsuario.Text, Encrypt.GetSHA256(txtContraseña.Text), txtNombre.Text, txtApellido.Text, cmbRol.Text, txtEmail.Text);
+            objetoCN.insertarUsuario(txtUsuario.Text, txtNombre.Text, txtApellido.Text, txtEmail.Text, txtContraseña.Text, cmbRol.Text, txtActivo.Text, txtFechaRegistro.Text);
 
             MessageBox.Show("Usuario ingresado correctamente");
             MostrarUsuarios();

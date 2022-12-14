@@ -19,7 +19,7 @@ namespace Presentation.Administrator
     {
 
 
-        SqlConnection Conexion = new SqlConnection("Server=LAPTOP-VTLJ41I5\\SQLEXPRESS;DataBase=PortafolioTest;Integrated Security=true");
+        SqlConnection Conexion = new SqlConnection("Server=LAPTOP-VTLJ41I5\\SQLEXPRESS;DataBase=test1;Integrated Security=true");
         SqlCommand cmd;
         SqlDataReader dr;
         public ReporteGlobal()

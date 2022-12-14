@@ -32,10 +32,11 @@ namespace DataAccess {
                     while (reader.Read())
                         {
                             UserLoginCache.UserID = reader.GetInt32(0);
-                            UserLoginCache.firstName = reader.GetString(3);
-                            UserLoginCache.lastName = reader.GetString(4);
-                            UserLoginCache.position = reader.GetString(5);
-                            UserLoginCache.email = reader.GetString(6);
+                            UserLoginCache.firstName = reader.GetString(2);
+                            UserLoginCache.lastName = reader.GetString(3);
+                            UserLoginCache.email = reader.GetString(4);
+                            UserLoginCache.position = reader.GetString(6);
+                           
 
                         }
                     return true;

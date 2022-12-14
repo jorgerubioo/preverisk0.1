@@ -21,8 +21,8 @@ namespace domains
 
         }
 
-        public void insertarUsuario (string loginname, string password, string firstname, string lastname, string position, string email) {
-            objetoCD.Insertar(loginname, password, firstname, lastname, position, email);  
+        public void insertarUsuario (string loginname, string firstname, string lastname, string email, string password, string position, string Activo, string FechaRegistro) {
+            objetoCD.Insertar(loginname, firstname, lastname, email, password, position, Activo, FechaRegistro);  
             
     }
 
