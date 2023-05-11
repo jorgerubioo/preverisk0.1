@@ -9,7 +9,7 @@ using System.Data;
 
 namespace DataAccess
 {
-
+    //datos
     
 
     public class ConnectionToSql
