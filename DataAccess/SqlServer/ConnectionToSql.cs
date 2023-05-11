@@ -14,7 +14,7 @@ namespace DataAccess
 
     public class ConnectionToSql
         {
-            private SqlConnection connectionString = new SqlConnection("Server=LAPTOP-VTLJ41I5\\SQLEXPRESS;DataBase= test1; integrated security= true");
+            private SqlConnection connectionString = new SqlConnection("Server=LAPTOP-VTLJ41I5\\SQLEXPRESS;DataBase=PreveriskFinal; integrated security= true");
             public SqlConnection AbrirConexion()
             {
                 if (connectionString.State == ConnectionState.Closed)
